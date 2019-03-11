@@ -12,7 +12,7 @@ Web Map Anatomy
 ### A Trusty Source Code Editor
 ### Download Workshop Data
 
-## Digital Map ≠ Map Map
+## Digital Map ≠ Web Map
 ### Digital Map
 ### Web Map
 
