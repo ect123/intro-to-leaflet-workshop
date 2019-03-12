@@ -1,4 +1,4 @@
-# Intro to Web Mapping with Leaflet.js
+# Web Maps from Scratch with Leaflet.js
 
 Introduction
 
