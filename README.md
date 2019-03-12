@@ -21,9 +21,9 @@ What exactly is leaflet? Leaflet is a set of instructions that your web browser 
 ### As Code
 ### In a Browser
 Here is a basic leaflet example. You can zoom in, pan around, ext. It sits in your browser and loads quickly. And if we wanted to we could easily customize it.
-'''html
-<iframe style="width:100%; height:500px;" src="maps/map01.html"></iframe>
-'''
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dHHmUF9gs70" frameborder="0" allowfullscreen></iframe>
+
 ## Basic Structure 
 ### Map Tiles
 ### Zoom Levels
