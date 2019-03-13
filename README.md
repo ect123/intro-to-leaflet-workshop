@@ -5,10 +5,10 @@
 # Introduction
 
 GIS Resources at UBC:
-General Informational website for all things UBC GIS: [gis.ubc.ca](http://gis.ubc.ca/).
+General Informational website for all things UBC GIS: [gis.ubc.ca](http://gis.ubc.ca/).    
 UBC Library's guide for finding and working with GIS resources: [guides.library.ubc.ca/gis](http://guides.library.ubc.ca/gis)
-UBC's GIS email list (participate or lurk!): [UBC GIS ListServ](https://lists.ubc.ca/scripts/wa.exe?SUBED1=GIS-LIST&A=1)
-UBC's GIS Slack (create your own channel or lurk!): [ubcgis.slack.com](https://ubcgis.slack.com/)
+UBC's GIS email list (participate or lurk!): [UBC GIS ListServ](https://lists.ubc.ca/scripts/wa.exe?SUBED1=GIS-LIST&A=1).  
+UBC's GIS Slack (create your own channel or lurk!): [ubcgis.slack.com](https://ubcgis.slack.com/) 
 Evan Thornberry, GIS Librarian @ UBC Library: evan.thornberry AT ubc.ca
 
 This workshop is meant to be a starting point for anyone wanting to start making webmaps.
