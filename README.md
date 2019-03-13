@@ -1,13 +1,28 @@
 # Web Maps from Scratch with Leaflet.js
 
-Introduction
-
-Map Documents
-Web Map Anatomy
-
-
+[menu]
 
 # Introduction
+
+GIS Resources at UBC:
+General Informational website for all things UBC GIS: [gis.ubc.ca](http://gis.ubc.ca/).
+UBC Library's guide for finding and working with GIS resources: [guides.library.ubc.ca/gis](http://guides.library.ubc.ca/gis)
+UBC's GIS email list (participate or lurk!): [UBC GIS ListServ](https://lists.ubc.ca/scripts/wa.exe?SUBED1=GIS-LIST&A=1)
+UBC's GIS Slack (create your own channel or lurk!): [ubcgis.slack.com](https://ubcgis.slack.com/)
+Evan Thornberry, GIS Librarian @ UBC Library: evan.thornberry AT ubc.ca
+
+This workshop is meant to be a starting point for anyone wanting to start making webmaps.
+Things that would be good to know before jumping right in (but you can do this after the workshop too!):
+HTML / CSS
+Javascript
+Cartographic design principals
+Static web content
+
+There is no prerequisite for this workshop
+
+
+
+
 ### Resources for Web Mapping
 ### A Trusty Source Code Editor
 ### Download Workshop Data
