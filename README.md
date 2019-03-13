@@ -4,27 +4,26 @@
 
 # Introduction
 
-*GIS Resources at UBC:*
-- General Informational website for all things UBC GIS: [gis.ubc.ca](http://gis.ubc.ca/).    
+#### GIS Resources at UBC:
+- General Informational website for all things UBC GIS: [gis.ubc.ca](http://gis.ubc.ca/)    
 - UBC Library's guide for finding and working with GIS resources: [guides.library.ubc.ca/gis](http://guides.library.ubc.ca/gis)
-- UBC's GIS email list (participate or lurk!): [UBC GIS ListServ](https://lists.ubc.ca/scripts/wa.exe?SUBED1=GIS-LIST&A=1).  
+- UBC's GIS email list (participate or lurk!): [UBC GIS ListServ](https://lists.ubc.ca/scripts/wa.exe?SUBED1=GIS-LIST&A=1)  
 - UBC's GIS Slack (create your own channel or lurk!): [ubcgis.slack.com](https://ubcgis.slack.com/) 
 - Evan Thornberry, GIS Librarian @ UBC Library: evan.thornberry AT ubc.ca
 
-This workshop is meant to be a starting point for anyone wanting to start making webmaps.
-Things that would be good to know before jumping right in (but you can do this after the workshop too!):
-HTML / CSS
-Javascript
-Cartographic design principals
-Static web content
-
-There is no prerequisite for this workshop
-
-
-
+#### Prerequisites
+This workshop is meant to be a starting point for anyone wanting to start making webmaps, and there are no actual prerequisites. That said, making digital maps is hard. Things that would be good to know before jumping right in (but you can do this after the workshop too!):
+- [Familiarity with code and code editors](#)
+- [Working knowledge of HTML / CSS](#)
+- [Understanding of Javascript](#) 
+- [Cartographic design principals](#)
+- [Creating static web content](#)
 
 ### Resources for Web Mapping
+This workshop builds on a zillion other resources for web mapping. Here are some other great places to start extending your knowledge:
+
 ### A Trusty Source Code Editor
+To make your life easier what viewing or editing code, it's good to have a nice [source code editor](https://en.wikipedia.org/wiki/Source_code_editor) in your webmapping toolbelt. This workshop uses Atom.io for screenshots 
 ### Download Workshop Data
 
 ## Digital Map ≠ Web Map
@@ -74,3 +73,5 @@ Here is a basic leaflet example. You can zoom in, pan around, ext. It sits in yo
 
 ## What's Next?
 ### Thanks - Stamen Maps, Alan McConchie, Lizi Diamond, Axis Maps
+### License
+CC 0.0 Public Domain
