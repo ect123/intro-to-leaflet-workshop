@@ -1,4 +1,4 @@
-{::options parse_block_html="true" /}
+
 # Web Maps from Scratch with Leaflet.js
 
 [menu]
@@ -34,7 +34,7 @@ To make your life easier what viewing or editing code, it's good to have a nice 
 ## What is Leaflet?
 What exactly is leaflet? Leaflet is a set of instructions that your web browser or mobile device uses to display maps and let you interact with them. So like when you double click a mouse on a map, leaflet tells your browser to zoom in. Leaflet defines the style of your map - and includes things like zoom controls, attribution links, colors for markers on top of the map, etc. It is made up of only 38kb of Javascript, so it is really fast and lightweight - meaning browsers don’t have to work very hard to load it. It is open source, free, and hugely customizable. And because of all of that it is really widely used. There are lots of alternative to Leaflet, but I think the one that is most widely used is Google Maps, which you need an API key to use.
 ### As Code
-Leaflet is JavaScript code library that provides interaction to web maps. It powers the ways your web browser interprets geospatial data, displays colors and styles, and provides interaction to maps. For instance, when you double click to zoom in, that action is Leaflet at work. When you add data to your map, Leaflet controls how it is shown and how it can be interactive. And because Leaflet is distributed as open-source code, it is hugely customizable and extensible. [Here are some examples](https://leafletjs.com/plugins.html){target="_blank"} of Leaflet-based plugins to give you an idea of how else it is being implemented.
+Leaflet is JavaScript code library that provides interaction to web maps. It powers the ways your web browser interprets geospatial data, displays colors and styles, and provides interaction to maps. For instance, when you double click to zoom in, that action is Leaflet at work. When you add data to your map, Leaflet controls how it is shown and how it can be interactive. And because Leaflet is distributed as open-source code, it is hugely customizable and extensible. [Here are some examples](https://leafletjs.com/plugins.html) of Leaflet-based plugins to give you an idea of how else it is being implemented.
 
 ### In a Browser
 Here is a basic Leaflet map example. You can zoom in, pan around, etc. It sits in your browser and loads quickly. And if we wanted to we could easily customize it.
