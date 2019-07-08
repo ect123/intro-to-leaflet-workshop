@@ -25,8 +25,8 @@ This workshop builds on a zillion other resources for web mapping. Here are some
 
 ### A Trusty Source Code Editor
 To make your life easier what viewing or editing code, it's good to have a nice [source code editor](https://en.wikipedia.org/wiki/Source_code_editor) in your webmapping toolbelt. This workshop uses Atom.io for screenshots
-### Download Workshop Data
-
+### Workshop Data
+All of the data you'll need for this workshop is included in this repository. If you'd like to download the whole package, click on the green download link (:exclamation:)
 ## Digital Map ≠ Web Map
 ### Digital Map
 ### Web Map
@@ -34,7 +34,7 @@ To make your life easier what viewing or editing code, it's good to have a nice 
 ## What is Leaflet?
 What exactly is leaflet? Leaflet is a set of instructions that your web browser or mobile device uses to display maps and let you interact with them. So like when you double click a mouse on a map, leaflet tells your browser to zoom in. Leaflet defines the style of your map - and includes things like zoom controls, attribution links, colors for markers on top of the map, etc. It is made up of only 38kb of Javascript, so it is really fast and lightweight - meaning browsers don’t have to work very hard to load it. It is open source, free, and hugely customizable. And because of all of that it is really widely used. There are lots of alternative to Leaflet, but I think the one that is most widely used is Google Maps, which you need an API key to use.
 ### As Code
-Leaflet is JavaScript code library that provides interaction to web maps. It powers the ways your web browser interprets geospatial data, displays colors and styles, and provides interaction to maps. For instance, when you double click to zoom in, that action is Leaflet at work. When you add data to your map, Leaflet controls how it is shown and how it can be interactive. And because Leaflet is distributed as open-source code, it is hugely customizable and extensible. [Here are some examples](https://leafletjs.com/plugins.html) of Leaflet-based plugins to give you an idea of how else it is being implemented.
+Leaflet is JavaScript code library that provides interaction to web maps. It powers the ways your web browser interprets geospatial data, displays colors and styles, and provides interaction to maps. For instance, when you double click to zoom in, Leaflet is at work. When you add data to your map, Leaflet controls how it is displayed and how it interacts. And because Leaflet is distributed as open-source code, it is hugely customizable and extensible. [Here are some examples](https://leafletjs.com/plugins.html) of Leaflet-based plugins to give you some idea.
 
 ### In a Browser
 Here is a basic [Leaflet map example](https://s3.amazonaws.com/ect123/PNWDC-Leaflet-2018/maps/map01.html). You can zoom in, pan around, etc. It sits in your browser and loads quickly. And if we wanted to we could easily customize it.
@@ -53,17 +53,24 @@ Here is a basic [Leaflet map example](https://s3.amazonaws.com/ect123/PNWDC-Leaf
 # Workshop
 ## Getting Started
 ### Software Used
+We will be using two pieces of software - a web browser, which will render/display your map. We’re using I think Firefox. And a source code editor to edit the html file that contains the map. We are going to use Dreamweaver, which is our only option here. Dreamweaver isn’t my first choice, but it is all we have. I recommend using Atom if anyone is interested in doing this at home. Atom is free and open source, and full of bells and whistles. Anyone here familiar with using a source code editor for web technologies?
 ### Putting it into Perspective
 ### Development Environment
-
-## Open Your Map Boilerplate
+First things first, lets set up your development environment. This is a fancy way of saying make the tools you are using accessible on your computer screen display. In our case, we’re just using a web browser and Dreamweaver, so we’ll split our screen in half - web browser on one side and Dreamweaver on another. Let’s take a second to do this. Everyone open Dreamweaver. This is really entirely up to your personal preferences. Once everyone’s there we’ll go ahead.
+## Create and Open Your Map Boilerplate
+Below is a bunch of code - this is our map boilerplate. We need to cut this and paste this to a new file in Dreamweaver. It’s important that you don’t lose any of this text, so if you want just click the button and paste in Dreamweaver. Do that.
 ### In a Browser
+Once you have pasted the text, save the file to your desktop. Save it as ubc-buildings.html. Once you save it, it should become colorful. When it is, in your browser, open a new tab open the file. Now you’ll have two tabs open in your browser, so I hope this isn’t too tricky.
 ### In a Source Code Editor
+in Atom, lets look at what is making this file work. The html document is split into two sections - a head which is between lines 2-13, and a body between lines 15-39. Are you all seeing the lines? Each of these sections are contained in opening and closing tags. Insiide the head is the metadata that your browser is given about the document. And the body is the container for the document.
 #### Head
+inside the head are things like on line 4, the metadata field for the document’s title. Your title is displayed in your browser tab. Lines 8-9 are links to the source for leaflet - including the js library as well as the style sheet (the .css) that defines how elements of this map will look. And on line 11 is the same link to jQuery. If you copy the link to the leaflet js and paste it in a new tab in your browser, you’ll see the raw javascript code. If you wanted to, you could just add tthat to this page, but we don’t need to.
 #### Body
+In the body, you have on line 17, the container for your map (contained in a div tag), including a name/id for the container, as well as a style attribute telling your browser to make this container as high as the page allows. Line 19-37 is the script for your map. This is what we’ll be editing today.
 #### Script
-
+in the script, on line 22 we have our map variable containing the initial starting point and zoom level. When someone opens this page, or refreshed their browser, this is what the map will show. Zoom levels are a digital map’s way of dealing with scale. In the paper world we have maps that are printed at different scales which show differing levels of detail. A paper map with a small scale has little detail, a map at a large scale has lots of detail. But with digital maps, we can just double-click our mouse to load more detail. There are up to 22 standard zoom levels, with zoom level 22 being the most detailed, and zoom level 0 being all the way zoomed out to see the entire world. We also have in lines 24-31 a tile layer variable. Your tile layer in this case is the basemap that we see when we are zooming and panning. What that is is a streaming set of georeferenced tiles that we are pulling in from some remote server. And we are defining that in these lines. There’s some other info in here too like attribution and a max min zoom level - this particular layer will only zoom into layer 18. And then it stops.
 ## Configure the Starting View
+Ok so we have our map boilerplate, and its a good starting point for making a map of ubc. One thing that we’ll notice is that when the map loads, it’s just starting over vancouver, and not UBC. So, let’s change that.
 
 ## Adding Data
 ### Markers
@@ -74,7 +81,7 @@ Here is a basic [Leaflet map example](https://s3.amazonaws.com/ect123/PNWDC-Leaf
 ## Interaction
 ### Hover Effects
 ### Popups
-
+If you want to change the popup text, feel free, or delete it all together.
 ## What's Next?
 ### Thanks - Stamen Maps, Alan McConchie, Lizi Diamond, Axis Maps
 ### License
