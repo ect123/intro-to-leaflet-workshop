@@ -43,9 +43,28 @@ Here is a basic [Leaflet map example](https://s3.amazonaws.com/ect123/PNWDC-Leaf
 Let's talk a little bit about what makes this map work. To do that, we'll dissect the
 ### Map Tiles
 ### Zoom Levels
+
 ### Tile Servers
 ### Raster and Vector Tiles
 ### Data (.SHP ⇢ .GeoJSON)
+If you've ever tried to share a Shapefile in the web, you've encountered some problems or the need to transform your file into something else. Shapefiles are meant for GIS and other software to consume. They weren't designed to be displayed in the web. [GeoJSON](https://geojson.org/) on the other hand, are meant for the web. They're "easy for humans to read, and easy for machines to read", meaning that they're a lightweight, simplified and format so your average web browser can use them, and they're also pretty easy to understand if you want to view and edit them in a code editor. Here's a GeoJSON point over UBC:
+
+```json
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The University of British Columbia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.25012207031249,
+          49.26186749272789
+        ]
+      }
+    }
+```
+In contrast, a Shapefile is a binary (not text) format, so you wouldn't be able to read the file with human eyes.
 ### Style
 ### Interaction
 
@@ -55,9 +74,9 @@ Let's talk a little bit about what makes this map work. To do that, we'll dissec
 We will be using two pieces of software - a web browser, which will render/display your map. We’re using I think Firefox. And a source code editor to edit the html file that contains the map. We are going to use Dreamweaver, which is our only option here. Dreamweaver isn’t my first choice, but it is all we have. I recommend using Atom if anyone is interested in doing this at home. Atom is free and open source, and full of bells and whistles. Anyone here familiar with using a source code editor for web technologies?
 ### Putting it into Perspective
 ### Development Environment
-First things first, lets set up your development environment. This is a fancy way of saying make the tools you are using accessible on your computer screen display. In our case, we’re just using a web browser and Dreamweaver, so we’ll split our screen in half - web browser on one side and Dreamweaver on another. Let’s take a second to do this. Everyone open Dreamweaver. This is really entirely up to your personal preferences. Once everyone’s there we’ll go ahead.
+First things first, let's set up your development environment. This is a fancy way of saying make the tools you are using accessible on your computer screen display. In our case, we’re just using a web browser and source code editor, so we’ll split our screen in half - web browser on one side and the code editor on another. Let’s take a second to do this. This is really entirely up to your personal preferences.
 ## Create and Open Your Map Boilerplate
-Below is a bunch of code - this is our map boilerplate. We need to cut this and paste this to a new file in Dreamweaver. It’s important that you don’t lose any of this text, so if you want just click the button and paste in Dreamweaver. Do that.
+Below is a bunch of code - this is our map boilerplate. We need to cut this and paste this to a new file into your source code editor. It’s important that you don’t lose any of this text, and that it remains in its original structure and arrangement.
 
 ```HTML
 <html>
