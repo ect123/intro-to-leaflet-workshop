@@ -37,11 +37,10 @@ What exactly is leaflet? Leaflet is a set of instructions that your web browser 
 Leaflet is JavaScript code library that provides interaction to web maps. It powers the ways your web browser interprets geospatial data, displays colors and styles, and provides interaction to maps. For instance, when you double click to zoom in, Leaflet is at work. When you add data to your map, Leaflet controls how it is displayed and how it interacts. And because Leaflet is distributed as open-source code, it is hugely customizable and extensible. [Here are some examples](https://leafletjs.com/plugins.html) of Leaflet-based plugins to give you some idea.
 
 ### In a Browser
-Here is a basic [Leaflet map example](https://s3.amazonaws.com/ect123/PNWDC-Leaflet-2018/maps/map01.html). You can zoom in, pan around, etc. It sits in your browser and loads quickly. And if we wanted to we could easily customize it.
-
-
+Here is a basic [Leaflet map example](https://s3.amazonaws.com/ect123/PNWDC-Leaflet-2018/maps/map01.html). You can zoom in, pan around, etc. It's meant to be displayed in your internet browser or a mobile application, so it loads and responds to you quickly.  
 
 ## Basic Structure
+Let's talk a little bit about what makes this map work. To do that, we'll dissect the
 ### Map Tiles
 ### Zoom Levels
 ### Tile Servers
@@ -59,6 +58,55 @@ We will be using two pieces of software - a web browser, which will render/displ
 First things first, lets set up your development environment. This is a fancy way of saying make the tools you are using accessible on your computer screen display. In our case, we’re just using a web browser and Dreamweaver, so we’ll split our screen in half - web browser on one side and Dreamweaver on another. Let’s take a second to do this. Everyone open Dreamweaver. This is really entirely up to your personal preferences. Once everyone’s there we’ll go ahead.
 ## Create and Open Your Map Boilerplate
 Below is a bunch of code - this is our map boilerplate. We need to cut this and paste this to a new file in Dreamweaver. It’s important that you don’t lose any of this text, so if you want just click the button and paste in Dreamweaver. Do that.
+
+```HTML
+<html>
+                <head>
+
+                <title>Leaflet</title>
+                <meta charset="utf-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Leaflet JS and CSS CDN source-->
+                <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin=""/>
+                <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
+        <!-- jQuery CDN source-->
+                <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+                </head>
+
+                <body>
+        <!-- Container for your map -->
+                <div id="mapid" style="height: 100%;"></div>
+        <!-- Script for your map between <script> and </script> -->
+                <script>
+
+        // Initialize your map, sets the initial view location and zoom level
+                var mymap = L.map('mapid').setView([49.2827, -123.1207], 11);
+        //Load the tile layer, paste in new tile layer of choice.
+                var Stamen_Terrain = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.{ext}', {
+                attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> — Map data © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+                subdomains: 'abcd',
+                minZoom: 0,
+                maxZoom: 18,
+
+                ext: 'png'
+                }).addTo(mymap);
+
+        //Plop your maker here
+
+        //Plop UBC's buildings layer here (this uses jQuery)
+
+        //Plop popup function here
+
+			     </script>
+
+  </body>
+</html>
+
+
+
+```
+
 ### In a Browser
 Once you have pasted the text, save the file to your desktop. Save it as ubc-buildings.html. Once you save it, it should become colorful. When it is, in your browser, open a new tab open the file. Now you’ll have two tabs open in your browser, so I hope this isn’t too tricky.
 ### In a Source Code Editor
