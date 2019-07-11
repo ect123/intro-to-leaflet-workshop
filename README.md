@@ -23,6 +23,8 @@ This workshop is meant to be a starting point for anyone wanting to start making
 ### Resources for Web Mapping
 This workshop builds on a zillion other resources for web mapping. Here are some other great places to start extending your knowledge:
 
+GeoJSON: [More than you ever wanted to know about GeoJSON - Tom MacWright](https://macwright.org/2015/03/23/geojson-second-bite.html)
+
 ### A Trusty Source Code Editor
 To make your life easier what viewing or editing code, it's good to have a nice [source code editor](https://en.wikipedia.org/wiki/Source_code_editor) in your webmapping toolbelt. This workshop uses Atom.io for screenshots
 ### Workshop Data
@@ -127,7 +129,11 @@ Below is a bunch of code - this is our map boilerplate. We need to cut this and 
 ```
 
 ### In a Browser
-Once you have pasted the text, save the file to your desktop. Save it as ubc-buildings.html. Once you save it, it should become colorful. When it is, in your browser, open a new tab open the file. Now you’ll have two tabs open in your browser, so I hope this isn’t too tricky.
+Once you have pasted the text, save the file to your desktop. Save it as ubc-buildings.html. When it is, in your browser, open a new tab open the file. Now you’ll have two tabs open in your browser, so I hope this isn’t too tricky. In your browser, you should see a map that looks something like this:
+
+![Map loads over the center of Vancouver](/img/map01.png "Your first map loads over Vancouver")
+
+
 ### In a Source Code Editor
 in Atom, lets look at what is making this file work. The html document is split into two sections - a head which is between lines 2-13, and a body between lines 15-39. Are you all seeing the lines? Each of these sections are contained in opening and closing tags. Insiide the head is the metadata that your browser is given about the document. And the body is the container for the document.
 #### Head
