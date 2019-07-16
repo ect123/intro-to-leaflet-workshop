@@ -39,7 +39,7 @@ What exactly is leaflet? Leaflet is a set of instructions that your web browser 
 Leaflet is JavaScript code library that provides interaction to web maps. It powers the ways your web browser interprets geospatial data, displays colors and styles, and provides interaction to maps. For instance, when you double click to zoom in, Leaflet is at work. When you add data to your map, Leaflet controls how it is displayed and how it interacts. And because Leaflet is distributed as open-source code, it is hugely customizable and extensible. [Here are some examples](https://leafletjs.com/plugins.html) of Leaflet-based plugins to give you some idea.
 
 ### In a Browser
-Here is a basic [Leaflet map example](https://s3.amazonaws.com/ect123/PNWDC-Leaflet-2018/maps/map01.html). You can zoom in, pan around, etc. It's meant to be displayed in your internet browser or a mobile application, so it loads and responds to you quickly.  
+Here is a basic [Leaflet map example](https://ect123.s3.amazonaws.com/map01.html). You can zoom in, pan around, etc. It's meant to be displayed in your internet browser or a mobile application, so it loads and responds to you quickly.  
 
 ## Basic Structure
 Let's talk a little bit about what makes this map work. To do that, we'll dissect the
