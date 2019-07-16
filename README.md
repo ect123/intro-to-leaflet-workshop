@@ -82,49 +82,46 @@ Below is a bunch of code - this is our map boilerplate. We need to cut this and 
 
 ```HTML
 <html>
-                <head>
+  <head>
 
-                <title>Leaflet</title>
-                <meta charset="utf-8" />
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Leaflet JS and CSS CDN source-->
-                <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin=""/>
-                <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
-        <!-- jQuery CDN source-->
-                <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <title>Leaflet</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-                </head>
+    <!-- Source for your Leaflet JavaScript and CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
 
-                <body>
-        <!-- Container for your map -->
-                <div id="mapid" style="height: 100%;"></div>
-        <!-- Script for your map between <script> and </script> -->
-                <script>
+  </head>
 
-        // Initialize your map, sets the initial view location and zoom level
-                var mymap = L.map('mapid').setView([49.2827, -123.1207], 11);
-        //Load the tile layer, paste in new tile layer of choice.
-                var Stamen_Terrain = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.{ext}', {
-                attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> — Map data © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-                subdomains: 'abcd',
-                minZoom: 0,
-                maxZoom: 18,
+  <body>
+    <!-- Your map's HTML container -->
+    <div id="mapid" style="height: 100%;"></div>
 
-                ext: 'png'
-                }).addTo(mymap);
+    <!-- Script for your map between <script> and </script> -->
+    <script>
 
-        //Plop your maker here
+      // Initialize your map, sets the initial view location and zoom level
+      var mymap = L.map('mapid').setView([49.2827, -123.1207], 11);
 
-        //Plop UBC's buildings layer here (this uses jQuery)
+      //Load the tile layer, paste in new tile layer of choice.
+      var Stamen_Terrain = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.{ext}', {
+      attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> — Map data © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+      subdomains: 'abcd',
+      minZoom: 0,
+      maxZoom: 18,
+      ext: 'png'
+        }).addTo(mymap);
 
-        //Plop popup function here
+      //Paste your maker here
 
-			     </script>
+      //Paste UBC's buildings layer here
 
+      //Paste popup function here
+
+    </script>
   </body>
 </html>
-
-
 
 ```
 
@@ -135,9 +132,9 @@ Once you have pasted the text, save the file to your desktop. Save it as ubc-bui
 
 
 ### In a Source Code Editor
-in Atom, lets look at what is making this file work. The html document is split into two sections - a head which is between lines 2-13, and a body between lines 15-39. Are you all seeing the lines? Each of these sections are contained in opening and closing tags. Insiide the head is the metadata that your browser is given about the document. And the body is the container for the document.
+in Atom, let's look at what is making this file work. The html document is split into two sections - a head which is between lines 2-13, and a body between lines 15-39. Are you all seeing the lines? Each of these sections are contained in opening and closing tags. Inside the head is the metadata that your browser is given about the document. And the body is the container for the document.
 #### Head
-inside the head are things like on line 4, the metadata field for the document’s title. Your title is displayed in your browser tab. Lines 8-9 are links to the source for leaflet - including the js library as well as the style sheet (the .css) that defines how elements of this map will look. And on line 11 is the same link to jQuery. If you copy the link to the leaflet js and paste it in a new tab in your browser, you’ll see the raw javascript code. If you wanted to, you could just add tthat to this page, but we don’t need to.
+inside the head are things like on line 4, the metadata field for the document’s title. Your title is displayed in your browser tab. Lines 8-9 are links to the source for leaflet - including the js library as well as the style sheet (the .css) that defines how elements of this map will look. And on line 11 is the same link to jQuery. If you copy the link to the leaflet js and paste it in a new tab in your browser, you’ll see the raw javascript code. If you wanted to, you could just add that to this page, but we don’t need to.
 #### Body
 In the body, you have on line 17, the container for your map (contained in a div tag), including a name/id for the container, as well as a style attribute telling your browser to make this container as high as the page allows. Line 19-37 is the script for your map. This is what we’ll be editing today.
 #### Script
@@ -145,16 +142,37 @@ in the script, on line 22 we have our map variable containing the initial starti
 ## Configure the Starting View
 Ok so we have our map boilerplate, and its a good starting point for making a map of ubc. One thing that we’ll notice is that when the map loads, it’s just starting over vancouver, and not UBC. So, let’s change that.
 
+![Map loads over the center of UBC](/img/map02.png "Your second map loads over UBC")
+
+### Zoom Levels
+![Map loads over the center of UBC!](/img/map03.png "Map loads over the center of UBC!")
+
 ## Adding Data
+
+
+
+
 ### Markers
+![Map loads over the center of UBC with a marker!](/img/map04.png "Map loads over the center of UBC with a marker!")
+
+
 ### GeoJSON
 
-## Change the Basemap Style
+![Map loads over the center of UBC with a marker, and a data layer!](/img/map05.png "Map loads over the center of UBC with a marker, and a data layer!")
+
+## Change the Base Map/Layer Style
+
+![Map loads over the center of UBC with a marker, a data layer, and a custom base map!](/img/map06.png "Map loads over the center of UBC with a marker, a data layer, and a custom base map!")
 
 ## Interaction
+
 ### Hover Effects
 ### Popups
 If you want to change the popup text, feel free, or delete it all together.
+
+![Map loads over the center of UBC with a marker, a data layer, a custom base map, and popup for the data layer!](/img/map07.png "Map loads over the center of UBC with a marker, a data layer, a custom base map, and popup for the data layer!")
+
+
 ## What's Next?
 ### Thanks - Stamen Maps, Alan McConchie, Lizi Diamond, Axis Maps
 ### License
