@@ -14,11 +14,10 @@
 
 #### Prerequisites
 This workshop is meant to be a starting point for anyone wanting to start making webmaps, and there are no actual prerequisites. That said, making digital maps is hard. Things that would be good to know before jumping right in (but you can do this after the workshop too!):
-- [Familiarity with code and code editors](#)
-- [Working knowledge of HTML / CSS](#)
-- [Understanding of JavaScript](#)
-- [Cartographic design principals](#)
-- [Creating static web content](#)
+- **Intro level knowledge of computer programming**. [Matt Adesanya's *A Gentler Introduction to Programming*](https://www.freecodecamp.org/news/a-gentler-introduction-to-programming-1f57383a1b2c/) is a great starting point, and will be more than you need for this workshop.
+- **Intro level knowledge of HTML, CSS and JavaScript**. [Sololearn.com offers several courses on these topics and more](https://www.sololearn.com/Courses/), but there are several other educational resources to choose from on the web if you prefer something different. You'er not expected to be a pro for this workshop, but understanding these concepts will provide some very useful perspective.
+- **Understanding of basic cartographic design concepts**. What is map making without a consideration of cartography? Axis Maps has written a phenomenal [short guide to cartography](https://www.axismaps.com/guide/), and [the web map module](https://www.axismaps.com/guide/web/should-a-map-be-interactive/) is especially relavent.
+
 
 ### Resources for Web Mapping
 This workshop builds on a zillion other resources for web mapping. Here are some other great places to start extending your knowledge:
