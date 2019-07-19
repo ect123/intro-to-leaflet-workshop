@@ -1,19 +1,30 @@
 
-# Web Maps from Scratch with Leaflet.js
+# Intro to Web Maps
 
-[menu]
+
+<p align="left">
+  <a href="#digital-map--web-map">Digital Map ≠ Web Map</a>&nbsp;|
+  <a href="#what-in-leaflet">What is Leaflet?</a>&nbsp;|
+  <a href="#qgis">Make Your Own Web Map</a>&nbsp;|
+  <a href="#hands-on">What's Next?</a>&nbsp;
+</p>
 
 # Introduction
 
+This workshop is intended for anyone interested in getting started with creating web maps, aimed at a beginner-level, and meant to be given in a lab setting. There are two main sections: an intro to web maps, and a hands-on where code is copy/pasted to make custom maps. The outcome is essential skills and knowledge, plus boilerplate code that can be built upon and tinkered with at a later time.
+
+<!--
 #### GIS Resources at UBC:
 - General Informational website for all things UBC GIS: [gis.ubc.ca](http://gis.ubc.ca/)    
 - UBC Library's guide for finding and working with GIS resources: [guides.library.ubc.ca/gis](http://guides.library.ubc.ca/gis)
 - UBC's GIS email list (participate or lurk!): [UBC GIS ListServ](https://lists.ubc.ca/scripts/wa.exe?SUBED1=GIS-LIST&A=1)  
 - UBC's GIS Slack (create your own channel or lurk!): [ubcgis.slack.com](https://ubcgis.slack.com/)
 - Evan Thornberry, GIS Librarian @ UBC Library: evan.thornberry AT ubc.ca
+-->
 
 #### Prerequisites
-This workshop is meant to be a starting point for anyone wanting to start making webmaps, and there are no actual prerequisites. That said, making digital maps is hard. Things that would be good to know before jumping right in (but you can do this after the workshop too!):
+Making maps is hard. And without practice, working in the web is hard too. While there are no actual prerequisites for the in-person workshop, these things would be good to know before jumping right in, or to refer to later:
+
 - **Intro level knowledge of computer programming**. [Matt Adesanya's *A Gentler Introduction to Programming*](https://www.freecodecamp.org/news/a-gentler-introduction-to-programming-1f57383a1b2c/) is a great starting point, and will be more than you need for this workshop.
 - **Intro level knowledge of HTML, CSS and JavaScript**. [Sololearn.com offers several courses on these topics and more](https://www.sololearn.com/Courses/), but there are several other educational resources to choose from on the web if you prefer something different. You'er not expected to be a pro for this workshop, but understanding these concepts will provide some very useful perspective.
 - **Understanding of basic cartographic design concepts**. What is map making without a consideration of cartography? Axis Maps has written a phenomenal [short guide to cartography](https://www.axismaps.com/guide/), and [the web map module](https://www.axismaps.com/guide/web/should-a-map-be-interactive/) is especially relavent.
@@ -25,7 +36,7 @@ This workshop builds on a zillion other resources for web mapping. Here are some
 GeoJSON: [More than you ever wanted to know about GeoJSON - Tom MacWright](https://macwright.org/2015/03/23/geojson-second-bite.html)
 
 ### A Trusty Source Code Editor
-To make your life easier what viewing or editing code, it's good to have a nice [source code editor](https://en.wikipedia.org/wiki/Source_code_editor) in your webmapping toolbelt. This workshop uses Atom.io for screenshots
+To make your life easier what viewing or editing code, it's good to have a nice [source code editor](https://en.wikipedia.org/wiki/Source_code_editor) in your web mapping tool belt. This workshop uses Atom.io for screenshots
 ### Workshop Data
 All of the data you'll need for this workshop is included in this repository. If you'd like to download the whole package, click on the green download link (:exclamation:)
 ## Digital Map ≠ Web Map
@@ -140,8 +151,21 @@ In the body, you have on line 17, the container for your map (contained in a div
 in the script, on line 22 we have our map variable containing the initial starting point and zoom level. When someone opens this page, or refreshed their browser, this is what the map will show. Zoom levels are a digital map’s way of dealing with scale. In the paper world we have maps that are printed at different scales which show differing levels of detail. A paper map with a small scale has little detail, a map at a large scale has lots of detail. But with digital maps, we can just double-click our mouse to load more detail. There are up to 22 standard zoom levels, with zoom level 22 being the most detailed, and zoom level 0 being all the way zoomed out to see the entire world. We also have in lines 24-31 a tile layer variable. Your tile layer in this case is the basemap that we see when we are zooming and panning. What that is is a streaming set of georeferenced tiles that we are pulling in from some remote server. And we are defining that in these lines. There’s some other info in here too like attribution and a max min zoom level - this particular layer will only zoom into layer 18. And then it stops.
 ## Configure the Starting View
 Ok so we have our map boilerplate, and its a good starting point for making a map of ubc. One thing that we’ll notice is that when the map loads, it’s just starting over vancouver, and not UBC. So, let’s change that.
+On line :exclamation: you should see this text:
+```javascript
+var mymap = L.map('mapid').setView([49.2827, -123.1207], 11);
+```
+You can see that there are a couple of recognizable elements here - most noticeably the latitude and longitude coordinate pair (49.2827, -123.1207). That location is the geographic center point for the city of Vancouver. When your browser loads the map, it starts with that point in the center of your screen.
+
+Say we want to load the map over UBC, which is about 5 km to the west. We'd need to change that coordinate pair to be the center point of UBC. There are several ways to find this, but an easy one is to use [latlong.net](https://www.latlong.net/). Type in UBC in latlong.net, and you return a coordinate pair of 49.260605 and -123.245995.
+
+**:heavy_check_mark: Replace the coordinate pair on line :exclamation: so your map loads over UBC.**
+
+Save your .html file, and reload your browser. If everything went as planned, you should see this:
+
 
 ![Map loads over the center of UBC](/img/map02.png "Your second map loads over UBC")
+
 
 ### Zoom Levels
 ![Map loads over the center of UBC!](/img/map03.png "Map loads over the center of UBC!")
