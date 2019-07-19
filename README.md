@@ -55,7 +55,7 @@ Here is a basic [Leaflet map example](https://ect123.s3.amazonaws.com/map01.html
 Let's talk a little bit about what makes this map work. To do that, we'll dissect the
 ### Map Tiles
 ### Zoom Levels
-
+Because web maps refresh content as you zoom in, they don't have a traditional map scale. Instead, there are different levels associated with the amount of detail shown on the map.
 ### Tile Servers
 ### Raster and Vector Tiles
 ### Data (.SHP ⇢ .GeoJSON)
@@ -166,8 +166,18 @@ Save your .html file, and reload your browser. If everything went as planned, yo
 
 ![Map loads over the center of UBC](/img/map02.png "Your second map loads over UBC")
 
+If you don't see a map like the one above, undo your edit in your source code editor (**ctl + z**), and save (**ctl + s**) when it's working again. At that point try again making sure your code syntax is exactly as shown:
+
+```javascript
+var mymap = L.map('mapid').setView([49.260605, -123.245995], 11);
+```
 
 ### Zoom Levels
+Your map currently loads at a zoom level which requires a user to zoom in immediately toward UBC. Ideally, if this map is meant to show information for UBC's campus, it would load as close to campus as possible, without different screen dimensions cutting off parts of the campus area. So we'll need to change the loading zoom level.
+
+Looking again at our <code>mymap</code> variable, the loading view is set at the coordinate pair over UBC, and at a zoom level of 11. In our case, the map best loads at zoom level 14. 
+
+
 ![Map loads over the center of UBC!](/img/map03.png "Map loads over the center of UBC!")
 
 ## Adding Data
