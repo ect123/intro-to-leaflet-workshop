@@ -63,7 +63,8 @@ A digital map is a map that was somehow derived from a computer. Sometimes we us
 
 We also use the term "digital map" to refer to
 
-![Front of City of Vancouver Cycling Map 2019](/img/vancycle.jpg "Front of City of Vancouver Cycling Map 2019")    
+![Front of City of Vancouver Cycling Map 2019](/img/vancycle.jpg "Front of City of Vancouver Cycling Map 2019")     
+
 <sub><sup>[Front of City of Vancouver Cycling 2019 Map](https://vancouver.ca/streets-transportation/cycling-routes-maps-and-trip-planner.aspx)</sup></sub>
 
 
