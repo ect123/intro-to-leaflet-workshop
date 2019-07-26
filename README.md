@@ -55,16 +55,22 @@ and it may not refer to anything specific. Rather it's more a catch-all term tha
 
 
 ### Digital Maps
-A Digital map is a map that was somehow derived from a computer. Sometimes we use this term to refer to scanned paper maps since they've been digitally reformatted, but mostly we think of  
+A digital map is a map that was somehow derived from a computer. Sometimes we use this term to refer to scanned paper maps since they've been digitally reformatted like this old map of Vancouver:
 
-![Digital surrogate of a historical map of Vancouver](/img/commonwealth_4m90fg11z_access800.jpg "Map reproduction courtesy of the Norman B. Leventhal Map & Education Center at the Boston Public Library")
+![Digital surrogate of a historical map of Vancouver](/img/commonwealth_4m90fg11z_access800.jpg "Map reproduction courtesy of the Norman B. Leventhal Map & Education Center at the Boston Public Library")    
+
 <sub><sup>[Map reproduction courtesy of the Norman B. Leventhal Map & Education Center at the Boston Public Library](https://collections.leventhalmap.org/search/commonwealth:4m90fg11z)</sup></sub>  
 
-![Front of City of Vancouver Cycling Map 2019](/img/vancycle.jpg "Front of City of Vancouver Cycling Map 2019")<sub><sup>[Front of City of Vancouver Cycling 2019 Map](https://vancouver.ca/streets-transportation/cycling-routes-maps-and-trip-planner.aspx)</sup></sub>
+We also use the term "digital map" to refer to
+
+![Front of City of Vancouver Cycling Map 2019](/img/vancycle.jpg "Front of City of Vancouver Cycling Map 2019")    
+<sub><sup>[Front of City of Vancouver Cycling 2019 Map](https://vancouver.ca/streets-transportation/cycling-routes-maps-and-trip-planner.aspx)</sup></sub>
 
 
 
 ### Web Maps
+Using the definition above, a web map is a type of digital map since it is derived from a computer. However there are some important differences:
+
 
 ## Basic Structure
 Let's talk a little bit about what makes this map work. To do that, we'll dissect the
