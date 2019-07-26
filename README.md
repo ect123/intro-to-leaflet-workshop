@@ -58,9 +58,7 @@ and it may not refer to anything specific. Rather it's more a catch-all term tha
 A digital map is a map that was somehow derived from a computer. Sometimes we use this term to refer to scanned paper maps since they've been digitally reformatted like this old map of Vancouver:
 
 ![Digital surrogate of a historical map of Vancouver](/img/commonwealth_4m90fg11z_access800.jpg "Map reproduction courtesy of the Norman B. Leventhal Map & Education Center at the Boston Public Library")    
-
-<sub><sup>[Map reproduction courtesy of the Norman B. Leventhal Map & Education Center at the Boston Public Library](https://collections.leventhalmap.org/search/commonwealth:4m90fg11z)</sup></sub>  
-
+<sub><sup>[Map reproduction courtesy of the Norman B. Leventhal Map & Education Center at the Boston Public Library](https://collections.leventhalmap.org/search/commonwealth:4m90fg11z)</sup></sub>     
 We also use the term "digital map" to refer to
 
 ![Front of City of Vancouver Cycling Map 2019](/img/vancycle.jpg "Front of City of Vancouver Cycling Map 2019")     
@@ -145,7 +143,7 @@ Below is a bunch of code - this is our map boilerplate. We need to cut this and 
       ext: 'png'
         }).addTo(mymap);
 
-      //Paste your maker here
+      //Paste your marker here
 
       //Paste UBC's buildings layer here
 
