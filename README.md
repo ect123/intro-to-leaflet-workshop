@@ -32,14 +32,6 @@ Making maps is hard. And without practice, working in the web is hard too. While
 - **Intro level knowledge of HTML, CSS and JavaScript**. [Sololearn.com offers several courses on these topics and more](https://www.sololearn.com/Courses/), but there are several other educational resources to choose from on the web if you prefer something different. You'er not expected to be a pro for this workshop, but understanding these concepts will provide some very useful perspective.
 - **Understanding of basic cartographic design concepts**. What is map making without a consideration of cartography? Axis Maps has written a phenomenal [short guide to cartography](https://www.axismaps.com/guide/), and [the web map module](https://www.axismaps.com/guide/web/should-a-map-be-interactive/) is especially relevant.
 
-
-### Resources for Web Mapping
-This workshop builds from several other resources for web mapping. Here are some great places to start extending your knowledge:
-
-GeoJSON: [More than you ever wanted to know about GeoJSON - Tom MacWright](https://macwright.org/2015/03/23/geojson-second-bite.html)
-Anatomy of a Web Map
-
-
 ### Workshop Data
 All of the data you'll need for this workshop is included in this repository. You can simply copy/paste the text from here to your local computer without downloading. However, if you'd like to download the whole package to repurpose, click on the green download link, then download the ZIP:
 
@@ -62,8 +54,17 @@ While we're talking about maps loading and working in the web, let's also talk t
 and it may not refer to anything specific. Rather it's more a catch-all term that refers
 
 
-### Digital Map
-### Web Map
+### Digital Maps
+A Digital map is a map that was somehow derived from a computer. Sometimes we use this term to refer to scanned paper maps since they've been digitally reformatted, but mostly we think of  
+
+![Digital surrogate of a historical map of Vancouver](/img/commonwealth_4m90fg11z_access800.jpg "Map reproduction courtesy of the Norman B. Leventhal Map & Education Center at the Boston Public Library")
+<sub><sup>[Map reproduction courtesy of the Norman B. Leventhal Map & Education Center at the Boston Public Library](https://collections.leventhalmap.org/search/commonwealth:4m90fg11z)</sup></sub>  
+
+![Front of City of Vancouver Cycling Map 2019](/img/vancycle.jpg "Front of City of Vancouver Cycling Map 2019")<sub><sup>[Front of City of Vancouver Cycling 2019 Map](https://vancouver.ca/streets-transportation/cycling-routes-maps-and-trip-planner.aspx)</sup></sub>
+
+
+
+### Web Maps
 
 ## Basic Structure
 Let's talk a little bit about what makes this map work. To do that, we'll dissect the
@@ -221,6 +222,14 @@ If you want to change the popup text, feel free, or delete it all together.
 
 
 ## What's Next?
-### Thanks - Stamen Maps, Alan McConchie, Lizi Diamond, Axis Maps
+
+### More Resources for Web Mapping
+This workshop builds from several other resources for web mapping. Here are some great places to start extending your knowledge:
+
+Web map basics: [Anatomy of a Web Map - Alan McConchie and Beth Schechter](http://maptime.io/anatomy-of-a-web-map/)    
+Leaflet basics: [Leaflet Quick Start Guide](https://leafletjs.com/examples/quick-start/)   
+Web map functionality examples: [Mapbox.js Examples](https://docs.mapbox.com/mapbox.js/example/v1.0.0/)    
+GeoJSON: [More than you ever wanted to know about GeoJSON - Tom MacWright](https://macwright.org/2015/03/23/geojson-second-bite.html)    
+
 ### License
 CC 0.0 Public Domain
