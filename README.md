@@ -11,7 +11,10 @@
 
 # Introduction
 
-This workshop is intended for anyone interested in getting started with creating web maps, aimed at a beginner-level, and meant to be given in a lab setting. There are two main sections: an intro to web maps, and a hands-on where code is copy/pasted to make custom maps. The outcome is essential skills and knowledge, plus boilerplate code that can be built upon and tinkered with at a later time.
+This workshop is intended for anyone interested in getting started with creating web maps, aimed at a beginner-level, and meant to be given in a lab setting. We will use [Leaflet](https://leafletjs.com/) as a base for understanding how web maps work. There are two main sections: an intro to web maps, and a hands-on where code is copy/pasted to make interactive maps. The goal is to develop essential skills and knowledge to get started, and provide an opportunity to ask questions (in person). As a bonus, students will create and have boilerplate code to be built upon and tinkered with at a later time.    
+#### Software used     
+- **Internet browser (and an internet connection)**. The most recent versions of [Mozilla Firefox](https://www.mozilla.org) and [Google Chrome](https://www.google.com/chrome/) are the recommended browsers.
+- **Source code editor**. To make your life easier what viewing or editing code, it's good to use a [source code editor](https://en.wikipedia.org/wiki/Source_code_editor). This workshop uses [Atom](https://atom.io/) for screenshots, but other editors like [Notepad++](https://notepad-plus-plus.org/) and [Sublime Text](https://www.sublimetext.com/3) will work similarly.
 
 <!--
 #### GIS Resources at UBC:
@@ -23,33 +26,44 @@ This workshop is intended for anyone interested in getting started with creating
 -->
 
 #### Prerequisites
-Making maps is hard. And without practice, working in the web is hard too. While there are no actual prerequisites for the in-person workshop, these things would be good to know before jumping right in, or to refer to later:
+Making maps is hard. And without practice, working in the web is hard too. While there are no actual prerequisites for the in person workshop, these things would be good to know before jumping right in, or to refer to later:
 
 - **Intro level knowledge of computer programming**. [Matt Adesanya's *A Gentler Introduction to Programming*](https://www.freecodecamp.org/news/a-gentler-introduction-to-programming-1f57383a1b2c/) is a great starting point, and will be more than you need for this workshop.
 - **Intro level knowledge of HTML, CSS and JavaScript**. [Sololearn.com offers several courses on these topics and more](https://www.sololearn.com/Courses/), but there are several other educational resources to choose from on the web if you prefer something different. You'er not expected to be a pro for this workshop, but understanding these concepts will provide some very useful perspective.
-- **Understanding of basic cartographic design concepts**. What is map making without a consideration of cartography? Axis Maps has written a phenomenal [short guide to cartography](https://www.axismaps.com/guide/), and [the web map module](https://www.axismaps.com/guide/web/should-a-map-be-interactive/) is especially relavent.
+- **Understanding of basic cartographic design concepts**. What is map making without a consideration of cartography? Axis Maps has written a phenomenal [short guide to cartography](https://www.axismaps.com/guide/), and [the web map module](https://www.axismaps.com/guide/web/should-a-map-be-interactive/) is especially relevant.
 
 
 ### Resources for Web Mapping
-This workshop builds on a zillion other resources for web mapping. Here are some other great places to start extending your knowledge:
+This workshop builds from several other resources for web mapping. Here are some great places to start extending your knowledge:
 
 GeoJSON: [More than you ever wanted to know about GeoJSON - Tom MacWright](https://macwright.org/2015/03/23/geojson-second-bite.html)
+Anatomy of a Web Map
 
-### A Trusty Source Code Editor
-To make your life easier what viewing or editing code, it's good to have a nice [source code editor](https://en.wikipedia.org/wiki/Source_code_editor) in your web mapping tool belt. This workshop uses Atom.io for screenshots
+
 ### Workshop Data
-All of the data you'll need for this workshop is included in this repository. If you'd like to download the whole package, click on the green download link (:exclamation:)
-## Digital Map ≠ Web Map
-### Digital Map
-### Web Map
+All of the data you'll need for this workshop is included in this repository. You can simply copy/paste the text from here to your local computer without downloading. However, if you'd like to download the whole package to repurpose, click on the green download link, then download the ZIP:
+
+![Download](/img/download.png "Download")
 
 ## What is Leaflet?
-What exactly is leaflet? Leaflet is a set of instructions that your web browser or mobile device uses to display maps and let you interact with them. So like when you double click a mouse on a map, leaflet tells your browser to zoom in. Leaflet defines the style of your map - and includes things like zoom controls, attribution links, colors for markers on top of the map, etc. It is made up of only 38kb of Javascript, so it is really fast and lightweight - meaning browsers don’t have to work very hard to load it. It is open source, free, and hugely customizable. And because of all of that it is really widely used. There are lots of alternative to Leaflet, but I think the one that is most widely used is Google Maps, which you need an API key to use.
+Let's get started!
+
+So, what exactly is Leaflet? Leaflet is a set of instructions that your web browser or mobile device uses to display maps and let you interact with them. So like when you double click a mouse on a map, leaflet tells your browser to zoom in. Leaflet defines the style of your map - and includes things like zoom controls, attribution links, colors for markers on top of the map, etc. It is made up of only 38kb of Javascript, so it is really fast and lightweight - meaning browsers don’t have to work very hard to load it. It is open source, free, and hugely customizable. And because of all of that it is really widely used. There are lots of alternative to Leaflet, but I think the one that is most widely used is Google Maps, which you need an API key to use.
 ### As Code
-Leaflet is JavaScript code library that provides interaction to web maps. It powers the ways your web browser interprets geospatial data, displays colors and styles, and provides interaction to maps. For instance, when you double click to zoom in, Leaflet is at work. When you add data to your map, Leaflet controls how it is displayed and how it interacts. And because Leaflet is distributed as open-source code, it is hugely customizable and extensible. [Here are some examples](https://leafletjs.com/plugins.html) of Leaflet-based plugins to give you some idea.
+Technically speaking, Leaflet consists of JavaScript and CSS code libraries which power the ways your web browser interprets and interacts with geospatial data, displays colors and style. For instance, when you double click a map to zoom in, Leaflet is at work. When you add data to your map, Leaflet assigns it a default color. And because Leaflet is open-source, the code is hugely customizable and extensible. [Here are some examples](https://leafletjs.com/plugins.html) of Leaflet-based plugins to give you some idea of the variety of added functionality that comes from the community of developers.
 
 ### In a Browser
-Here is a basic [Leaflet map example](https://ect123.s3.amazonaws.com/map01.html). You can zoom in, pan around, etc. It's meant to be displayed in your internet browser or a mobile application, so it loads and responds to you quickly.  
+Take a look at this basic [Leaflet map example](https://ect123.s3.amazonaws.com/map01.html). You can zoom in, pan around, etc. It's meant to be displayed in your internet browser or a mobile application, so it loads and responds to you quickly.  
+
+## Web Map ≠ Digital Map
+While we're talking about maps loading and working in the web, let's also talk the difference between a **web map** and a **digital map**. The term digital map is used quite often. As a benchmark, Wikipedia's entry for "Digital Mapping" is:
+
+
+and it may not refer to anything specific. Rather it's more a catch-all term that refers
+
+
+### Digital Map
+### Web Map
 
 ## Basic Structure
 Let's talk a little bit about what makes this map work. To do that, we'll dissect the
@@ -175,7 +189,7 @@ var mymap = L.map('mapid').setView([49.260605, -123.245995], 11);
 ### Zoom Levels
 Your map currently loads at a zoom level which requires a user to zoom in immediately toward UBC. Ideally, if this map is meant to show information for UBC's campus, it would load as close to campus as possible, without different screen dimensions cutting off parts of the campus area. So we'll need to change the loading zoom level.
 
-Looking again at our <code>mymap</code> variable, the loading view is set at the coordinate pair over UBC, and at a zoom level of 11. In our case, the map best loads at zoom level 14. 
+Looking again at our <code>mymap</code> variable, the loading view is set at the coordinate pair over UBC, and at a zoom level of 11. In our case, the map best loads at zoom level 14.
 
 
 ![Map loads over the center of UBC!](/img/map03.png "Map loads over the center of UBC!")
