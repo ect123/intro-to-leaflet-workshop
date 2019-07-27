@@ -150,18 +150,22 @@ One other great thing about GeoJSON, is that becuase they are open-source and si
 **:heavy_check_mark: In the Table panel, edit the GeoJSON file's attributes, by changing the name of the location.**
 
 ### Style 😎     
-The basic building blocks of the web -- HTML and CSS -- also play a role in the way your map looks. We'll be creating a static .html document to display our web map as a full page document. Alternatively, we could create a map for a specific web page oin this workshop, but will rely on the Leaflet's built-in CSS rules for styling. However, in the future you can always customize these settings to fit the style of your own website or page.    
+The basic building blocks of the web -- **HTML and CSS** -- also play a role in the way your map looks. We'll be creating a static HTML document to display our map as a full page document, but we could change the formatting with html code if we wanted to. CSS can be used to customize our HTML document, but also our data. Styling our geographic data (AKA digital cartography) so that it is accessible, helps convey a story, and looks good takes a lot of practice and talent. Expert digital cartographers are true artists.   
 
+That said, we will rely on the Leaflet's built-in CSS rules for styling. However, in the future you can always customize these settings to fit the style of your own website or page.    
 
 ### Interaction
+The interaction seen in web maps is powered by **JavaScript**. There are JavaScript libraries for ALL SORTS of things, and we're using Leaflet as a foundation for our maps. However you can add customization to your map so that it can do just about anything (remember those plugins?).    
+
+For this workshop, we're not creating any new code or writing new scripts. We're just going to copy and paste some pre-assembled text so that you can see how it works to affect your map.
 
 # Workshop
-## Getting Started
-### Software Used
-We will be using two pieces of software - a web browser, which will render/display your map. We’re using I think Firefox. And a source code editor to edit the html file that contains the map. We are going to use Dreamweaver, which is our only option here. Dreamweaver isn’t my first choice, but it is all we have. I recommend using Atom if anyone is interested in doing this at home. Atom is free and open source, and full of bells and whistles. Anyone here familiar with using a source code editor for web technologies?
 ### Putting it into Perspective
+Before we start working on our map, let's just put things into perspective. This is an introductory workshop, and meant to get you started with the tools and give you the skills to move forward on your own. Within the greater web mapping ecosystem, we're touching on the essentials. And give you an idea of how what we are doing fits into that ecosystem, take a [look at this diagram from Maptime](http://maptime.io/anatomy-of-a-web-map/#84), and notice the <HTML> document, and the internet browser.
+### Software Used
+We'll use two pieces of software - a web browser, which will render/display your map, and a source code editor which we'll use to edit that map.
 ### Development Environment
-First things first, let's set up your development environment. This is a fancy way of saying make the tools you are using accessible on your computer screen display. In our case, we’re just using a web browser and source code editor, so we’ll split our screen in half - web browser on one side and the code editor on another. Let’s take a second to do this. This is really entirely up to your personal preferences.
+First things first, let's set up your development environment which includes the two pieces of software, and a method for you to access them both efficiently. One option is to split your screen in half - web browser on one side and the code editor on another. Or you can move from one application tab to another by minimizing windows. It's totally your call, and the point is to find out what works best for you.
 ## Create and Open Your Map Boilerplate
 Below is a bunch of code - this is our map boilerplate. We need to cut this and paste this to a new file into your source code editor. It’s important that you don’t lose any of this text, and that it remains in its original structure and arrangement.
 
