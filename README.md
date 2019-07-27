@@ -246,7 +246,8 @@ The stuff inside the <code>head</code> is the metadata for your browser about th
 If you copy either one of those links and paste it in a new tab in your browser, you’ll see a lot of raw code. By linking to the source, we avoid having to carry this text into our own document, while also being assured that the code we're using is up-to-date.
 #### Body
 The <code>body</code> is the container for the what you see formatted in your browser. Here, you have an HTML container for your map, which is styled to be the height of a full page.     
-```html<div id="mapid" style="height: 100%;"></div>
+```html   
+<div id="mapid" style="height: 100%;"></div>
 ```
 
 
