@@ -266,12 +266,9 @@ The first line is our map variable. A JavaScript variable is something that hold
 The other variable <code>Stamen_Terrain</code> hold values for the map tile layer that we are using for our base layer including where the tiles are coming from, a limit on the max and min zoom level, and attribution.   
 
 ## Configure the Starting View
-Ok so we have our map boilerplate, and its a good starting point for making a map of UBC. One thing that we’ll notice is that when the map loads, it’s just starting over vancouver, and not UBC. So, let’s change that.
-On line :exclamation: you should see this text:
-```javascript
-var mymap = L.map('mapid').setView([49.2827, -123.1207], 11);
-```
-You can see that there are a couple of recognizable elements here - most noticeably the latitude and longitude coordinate pair (49.2827, -123.1207). That location is the geographic center point for the city of Vancouver. When your browser loads the map, it starts with that point in the center of your screen.
+Ok so we have our map boilerplate, and its a good starting point for making a map of UBC. One thing that we’ll notice is that when the map loads, it’s just starting over Vancouver, and not UBC. So let’s change that.
+
+In the <code>mymap</code> variable you can see a couple of recognizable elements - most noticeably the latitude and longitude coordinate pair (49.2827, -123.1207). That location is the geographic center point for the city of Vancouver. When your browser loads the map, it starts with that point in the center of your screen.
 
 Say we want to load the map over UBC, which is about 5 km to the west. We'd need to change that coordinate pair to be the center point of UBC. There are several ways to find this, but an easy one is to use [latlong.net](https://www.latlong.net/). Type in UBC in latlong.net, and you return a coordinate pair of 49.260605 and -123.245995.
 
