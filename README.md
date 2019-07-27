@@ -297,11 +297,19 @@ You should see this if you save and refresh your map:
 ![Map loads over the center of UBC!](/img/map03.png "Map loads over the center of UBC!")
 
 ## Adding Data
-
-
-
+Let's add some map features!!
 
 ### Markers
+Leaflet gives us an easy way to add basic map features called **markers**, which represent a point location on the ground. More information about adding basic features to Leaflet can be found in the [Leaflet Quick Start Guide](https://leafletjs.com/examples/quick-start/). Let's add a marker over UBC campus.    
+
+**:heavy_check_mark: Add a Leaflet marker by copying the text below and adding it to your HTML <code>body</code>.**
+
+```JavaScript
+var ubccampus = L.marker([49.260605, -123.245995]).addTo(mymap).bindPopup("Hi Mom!");
+
+```    
+You should see something like this:    
+
 ![Map loads over the center of UBC with a marker!](/img/map04.png "Map loads over the center of UBC with a marker!")
 
 
