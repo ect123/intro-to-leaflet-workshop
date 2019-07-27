@@ -213,12 +213,16 @@ Below is a bunch of code - this is our map boilerplate. We need to cut this and 
 </html>
 
 ```
-**:heavy_check_mark: Copy the text above and paste it into a blank document in your code editor.**    
+**:heavy_check_mark: Copy the text above and paste it into a blank document in your code editor.**     
+
 **:heavy_check_mark: Save the file to you computer and name it *ubc-buildings.html*.**
 
 
 ### In a Browser
-Once you have pasted the text into your code editor, save the file to your desktop. Name it ***ubc-buildings.html*** (or something else logical). When it is, in your browser, open a new tab open the file. Now you’ll have two tabs open in your browser, so I hope this isn’t too tricky. In your browser, you should see a map that looks something like this:
+Once you have your HTML file saved, open it in a new tab or browser window.    
+**:heavy_check_mark: Right-click the .html file you just saved, adn open with Google Chrome or Mozilla Firefox.**    
+
+You should see a map that looks something like this:
 
 ![Map loads over the center of Vancouver](/img/map01.png "Your first map loads over Vancouver")
 
