@@ -1,5 +1,5 @@
 
-# Intro to Web Maps
+# Intro to Web Maps using Leaflet
 
 
 <p align="left">
@@ -14,7 +14,7 @@
 This workshop is intended for anyone interested in getting started with creating web maps, aimed at a beginner-level, and meant to be given in a lab setting. We will use [Leaflet](https://leafletjs.com/) as a base for understanding how web maps work. There are two main sections: an intro to web maps, and a hands-on where code is copy/pasted to make interactive maps. The goal is to develop essential skills and knowledge to get started, and provide an opportunity to ask questions (in person). As a bonus, students will create and have boilerplate code to be built upon and tinkered with at a later time.    
 #### Software used     
 - **Internet browser (and an internet connection)**. The most recent versions of [Mozilla Firefox](https://www.mozilla.org) and [Google Chrome](https://www.google.com/chrome/) are the recommended browsers.
-- **Source code editor**. To make your life easier what viewing or editing code, it's good to use a [source code editor](https://en.wikipedia.org/wiki/Source_code_editor). This workshop uses [Atom](https://atom.io/) for screenshots, but other editors like [Notepad++](https://notepad-plus-plus.org/) and [Sublime Text](https://www.sublimetext.com/3) will work similarly.
+- **Source code editor**. To make your life easier while viewing or editing code, it's good to use a [source code editor](https://en.wikipedia.org/wiki/Source_code_editor). This workshop uses [Atom](https://atom.io/) for screenshots, but other editors like [Notepad++](https://notepad-plus-plus.org/) and [Sublime Text](https://www.sublimetext.com/3) will work similarly.
 
 <!--
 #### GIS Resources at UBC:
@@ -59,16 +59,18 @@ A digital map is a map that was somehow derived from a computer. Sometimes we us
 
 ![Digital surrogate of a historical map of Vancouver](/img/commonwealth_4m90fg11z_access800.jpg "Map reproduction courtesy of the Norman B. Leventhal Map & Education Center at the Boston Public Library")    
 <sub><sup>[Map reproduction courtesy of the Norman B. Leventhal Map & Education Center at the Boston Public Library](https://collections.leventhalmap.org/search/commonwealth:4m90fg11z)</sup></sub>     
-We also use the term "digital map" to refer to
+
+More commonly, we use this term for "born digital" maps like this cycling map from the City of Vancouver. This map was likely constructed with geospatial data and a Geographic Information System (GIS), and published at a static scale and dimension.
 
 ![Front of City of Vancouver Cycling Map 2019](/img/vancycle.jpg "Front of City of Vancouver Cycling Map 2019")     
 
 <sub><sup>[Front of City of Vancouver Cycling 2019 Map](https://vancouver.ca/streets-transportation/cycling-routes-maps-and-trip-planner.aspx)</sup></sub>
 
-
-
 ### Web Maps
 Using the definition above, a web map is a type of digital map since it is derived from a computer. However there are some important differences:
+- **Web may have dynamic scales and content**. For instance when you zoom in, more information may appear that wasn't apparent before. For this reason, web maps are not designed for print.
+- **Interactive**. This has been stated already, but web maps are built to be interacted with - usually by an end user.
+- **Often relies on web and mobile technology**.
 
 
 ## Basic Structure
@@ -78,7 +80,7 @@ Let's talk a little bit about what makes this map work. To do that, we'll dissec
 Because web maps refresh content as you zoom in, they don't have a traditional map scale. Instead, there are different levels associated with the amount of detail shown on the map.
 ### Tile Servers
 ### Raster and Vector Tiles
-### Data (.SHP ⇢ .GeoJSON)
+### Data (.shp ⇢ .geojson)
 If you've ever tried to share a Shapefile in the web, you've encountered some problems or the need to transform your file into something else. Shapefiles are meant for GIS and other software to consume. They weren't designed to be displayed in the web. [GeoJSON](https://geojson.org/) on the other hand, are meant for the web. They're "easy for humans to read, and easy for machines to read", meaning that they're a lightweight, simplified and format so your average web browser can use them, and they're also pretty easy to understand if you want to view and edit them in a code editor. Here's a GeoJSON point over UBC:
 
 ```json
@@ -226,7 +228,10 @@ If you want to change the popup text, feel free, or delete it all together.
 ![Map loads over the center of UBC with a marker, a data layer, a custom base map, and popup for the data layer!](/img/map07.png "Map loads over the center of UBC with a marker, a data layer, a custom base map, and popup for the data layer!")
 
 
-## What's Next?
+## What's Next?    
+You are not required to think about web maps ever again, but if this workshop has inspired you to expand your skills, try making another map on your own using data for a different location on your own. This will give you some clarity around where you might have some gaps in understanding. There are some additional clean .geojsons included here to practice.
+
+***Keep in mind that not all data will be nicely packaged and cleaned. In fact, it never is. If you proceed to use data that you've found on the web, be prepared to spend time preparing your data to be usable with Leaflet and the web.***
 
 ### More Resources for Web Mapping
 This workshop builds from several other resources for web mapping. Here are some great places to start extending your knowledge:
