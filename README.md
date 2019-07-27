@@ -272,7 +272,7 @@ In the <code>mymap</code> variable you can see a couple of recognizable elements
 
 Say we want to load the map over UBC, which is about 5 km to the west. We'd need to change that coordinate pair to be the center point of UBC. There are several ways to find this, but an easy one is to use [latlong.net](https://www.latlong.net/). Type in UBC in latlong.net, and you return a coordinate pair of 49.260605 and -123.245995.
 
-**:heavy_check_mark: Replace the coordinate pair on line :exclamation: so your map loads over UBC.**
+**:heavy_check_mark: Replace the coordinate pair so your map loads over UBC.**
 
 Save your .html file, and reload your browser. If everything went as planned, you should see this:
 
