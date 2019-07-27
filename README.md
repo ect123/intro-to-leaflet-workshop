@@ -108,9 +108,9 @@ You might also be thinking: ***Can I customize my own tiles to make them look co
 
 Here are some interesting styles:    
 
-![tiles](http://a.tile.openstreetmap.org/0/0/0.png) | ![tiles](http://a.tile.openstreetmap.org/0/0/0.png) | ![tiles](http://a.tile.openstreetmap.org/0/0/0.png)
-![tiles](http://a.tile.openstreetmap.org/0/0/0.png) | ![tiles](http://a.tile.openstreetmap.org/0/0/0.png) | ![tiles](http://a.tile.openstreetmap.org/0/0/0.png)
-![tiles](http://a.tile.openstreetmap.org/0/0/0.png) | ![tiles](http://a.tile.openstreetmap.org/18/41325/89736.png) | ![tiles](http://a.tile.openstreetmap.org/0/0/0.png)
+![tiles](http://a.tile.openstreetmap.org/0/0/0.png)  ![tiles](http://a.tile.openstreetmap.org/0/0/0.png)  ![tiles](http://a.tile.openstreetmap.org/0/0/0.png)
+![tiles](http://a.tile.openstreetmap.org/0/0/0.png)  ![tiles](http://a.tile.openstreetmap.org/0/0/0.png)  ![tiles](http://a.tile.openstreetmap.org/0/0/0.png)
+![tiles](http://a.tile.openstreetmap.org/0/0/0.png)  ![tiles](http://a.tile.openstreetmap.org/18/41325/89736.png)  ![tiles](http://a.tile.openstreetmap.org/0/0/0.png)
 
 
 #### Raster and Vector Tiles    
