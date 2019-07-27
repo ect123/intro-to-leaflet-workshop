@@ -163,7 +163,7 @@ For this workshop, we're not creating any new code or writing new scripts. We're
 ### Putting it into Perspective
 Before we start working on our map, let's just put things into perspective. This is an introductory workshop, and meant to get you started with the tools and give you the skills to move forward on your own. Within the greater web mapping ecosystem, we're touching on the essentials. And give you an idea of how what we are doing fits into that ecosystem, take a [look at this diagram from Maptime](http://maptime.io/anatomy-of-a-web-map/#84), and notice the <HTML> document, and the internet browser.
 ### Software Used
-We'll use two pieces of software - a web browser, which will render/display your map, and a source code editor which we'll use to edit that map.
+We'll use two pieces of software - a web browser, which will render/display your map, and a source code editor to edit that map.
 ### Development Environment
 First things first, let's set up your development environment which includes the two pieces of software, and a method for you to access them both efficiently. One option is to split your screen in half - web browser on one side and the code editor on another. Or you can move from one application tab to another by minimizing windows. It's totally your call, and the point is to find out what works best for you.
 ## Create and Open Your Map Boilerplate
@@ -213,9 +213,12 @@ Below is a bunch of code - this is our map boilerplate. We need to cut this and 
 </html>
 
 ```
+**:heavy_check_mark: Copy the text above and paste it into a blank document in your code editor.**    
+**:heavy_check_mark: Save the file to you computer and name it *ubc-buildings.html*.**
+
 
 ### In a Browser
-Once you have pasted the text, save the file to your desktop. Save it as ubc-buildings.html. When it is, in your browser, open a new tab open the file. Now you’ll have two tabs open in your browser, so I hope this isn’t too tricky. In your browser, you should see a map that looks something like this:
+Once you have pasted the text into your code editor, save the file to your desktop. Name it ***ubc-buildings.html*** (or something else logical). When it is, in your browser, open a new tab open the file. Now you’ll have two tabs open in your browser, so I hope this isn’t too tricky. In your browser, you should see a map that looks something like this:
 
 ![Map loads over the center of Vancouver](/img/map01.png "Your first map loads over Vancouver")
 
