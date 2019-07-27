@@ -235,12 +235,17 @@ Let's look at what is making this file work using our code editor. The HTML docu
 <body> some other stuff </body>
 ```
 
-
-Inside the head is the metadata that your browser is given about the document. And the body is the container for the document.
 #### Head
-inside the head are things like on line 4, the metadata field for the document’s title. Your title is displayed in your browser tab. Lines 8-9 are links to the source for leaflet - including the js library as well as the style sheet (the .css) that defines how elements of this map will look. And on line 11 is the same link to jQuery. If you copy the link to the leaflet js and paste it in a new tab in your browser, you’ll see the raw javascript code. If you wanted to, you could just add that to this page, but we don’t need to.
+The stuff inside the <code>head</code> is the metadata for your browser about the document. Inside the <code>head</code> are things like the document’s title - in case "Leaflet" - so that it can used for things like being displayed in your browser's tab. Additionally, there are some lines with links to the source code for Leaflet:     
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
+``` 
+
+are links to the source for leaflet - including the js library as well as the style sheet (the .css) that defines how elements of this map will look. And on line 11 is the same link to jQuery. If you copy the link to the leaflet js and paste it in a new tab in your browser, you’ll see the raw javascript code. If you wanted to, you could just add that to this page, but we don’t need to.
 #### Body
-In the body, you have on line 17, the container for your map (contained in a div tag), including a name/id for the container, as well as a style attribute telling your browser to make this container as high as the page allows. Line 19-37 is the script for your map. This is what we’ll be editing today.
+And the body is the container for the document. In the body, you have on line 17, the container for your map (contained in a div tag), including a name/id for the container, as well as a style attribute telling your browser to make this container as high as the page allows. Line 19-37 is the script for your map. This is what we’ll be editing today.
 #### Script
 in the script, on line 22 we have our map variable containing the initial starting point and zoom level. When someone opens this page, or refreshed their browser, this is what the map will show. Zoom levels are a digital map’s way of dealing with scale. In the paper world we have maps that are printed at different scales which show differing levels of detail. A paper map with a small scale has little detail, a map at a large scale has lots of detail. But with digital maps, we can just double-click our mouse to load more detail. There are up to 22 standard zoom levels, with zoom level 22 being the most detailed, and zoom level 0 being all the way zoomed out to see the entire world. We also have in lines 24-31 a tile layer variable. Your tile layer in this case is the basemap that we see when we are zooming and panning. What that is is a streaming set of georeferenced tiles that we are pulling in from some remote server. And we are defining that in these lines. There’s some other info in here too like attribution and a max min zoom level - this particular layer will only zoom into layer 18. And then it stops.
 ## Configure the Starting View
