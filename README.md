@@ -84,14 +84,16 @@ Map tiles are squares of geographic data that are loaded to your frame of view w
 
 Every time you pan your map, new tiles are loaded to fill that frame of view. The tiles outside of that view are not loaded because loading the entire world's tiles would be time consuming, especially if you were just focused on a small area. When you zoom in or out, new tiles are loaded to correspond with the level of detail needed at each **zoom level**.    
 
-Web maps typically have around 20 zoom levels. Zoom level 0 has the least amount of detail, and is from a viewpoint as far away as earth as it gets. As the zoom level number goes up, so does the detail. Zoom level 18 has enough detail that displaying building titles makes sense. Zoom level 0 consisting of only 1 tile for the entire world (this zoom level loads the fastest!). Zoom level 18 consists of around 69 billion tiles. That's a lot of data!!!!    
+### Zoom Levels
+Because web maps refresh content as you zoom in, they don't have a traditional map scale. Instead, there are different levels associated with the amount of detail shown on the map.
+Web maps typically have around 20 zoom numbered levels. Zoom level 0 has the least amount of detail, and is from a viewpoint as far away as earth as it gets. As the zoom level number goes up, so does the detail. Zoom level 18 has enough detail that displaying building titles makes sense. Zoom level 0 consisting of only 1 tile for the entire world (this zoom level loads the fastest!). Zoom level 18 consists of around 69 billion tiles. That's a lot of data!!!!    
 
 Level 0 | Level 18
 --- | ---
 ![tiles](http://a.tile.openstreetmap.org/0/0/0.png) | ![tiles](http://a.tile.openstreetmap.org/18/41325/89736.png)
 1 tile covers the world| 69 billion tiles cover the world    
 
-<--! Here's the map tile grid for **zoom level 11 over Vancouver**:    
+<!-- Here's the map tile grid for **zoom level 11 over Vancouver**:    
 ![tiles](/img/vanzoom11.png)   
 
 Here's the map tile grid for **zoom level 13 over Vancouver**:    
@@ -99,7 +101,12 @@ Here's the map tile grid for **zoom level 13 over Vancouver**:
 -->
 
 
-### Tile Servers
+### Tile Servers  
+You might be thinking: where are all these tiles loading from? Well, there are services that render these tiles for consumption. The main two being Google and [OpenStreetMap](https://wiki.openstreetmap.org/wiki/Tile_servers), but there are many others.     
+You might also be thinking: Can I style my own tiles? You can, with services like [Mapbox Studio](https://www.mapbox.com/mapbox-studio/), or [set up your own server](https://medium.com/@Nithanaroy/create-your-own-tile-server-and-map-client-5f7515fff28) to render your own. But these are both way beyond the scope of this workshop, so for now, don't worry about it. There are several out-of-the-box options to make your map tiles look sleek. 
+
+
+
 ### Raster and Vector Tiles
 ### Data (.shp ⇢ .geojson)
 If you've ever tried to share a Shapefile in the web, you've encountered some problems or the need to transform your file into something else. Shapefiles are meant for GIS and other software to consume. They weren't designed to be displayed in the web. [GeoJSON](https://geojson.org/) on the other hand, are meant for the web. They're "easy for humans to read, and easy for machines to read", meaning that they're a lightweight, simplified and format so your average web browser can use them, and they're also pretty easy to understand if you want to view and edit them in a code editor. Here's a GeoJSON point over UBC:
