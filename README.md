@@ -78,9 +78,19 @@ In any case, web maps are a canvas for visualizing and interacting with geograph
 ## Basic Structure
 Let's talk a little bit about what makes this map work. To do that, we'll dissect the main moving parts of a basic web map. These parts work in concert to make a functioning web map.
 ### Map Tiles
-Map tiles are squares of geographic data that are loaded to your frame of view whenever you zoom or pan your map. You've probably noticed them if you've had choppy internet connection and had to wait for data to load:    
+Map tiles are squares of geographic data that are loaded to your frame of view whenever you zoom or pan your map. Each tile is a 256px x 256px (traditionally a .png image at roughly 20-40kb each), making them quick to load over an internet connection. These tiles provide a geographic reference for other data layers that might be added later (we'll get to that in a minute). You've probably noticed them if you've had choppy internet connection and had to wait for data to load:    
 
-![tiles](/img/tiles.gif)   
+![tiles](/img/tiles.gif)    
+
+Every time you pan your map, new tiles are loaded to fill that frame of view. The tiles outside of that view are not loaded because loading the entire world's tiles would be time consuming, especially if you were just focused on a small area. When you zoom in or out, new tiles are loaded to correspond with the level of detail needed at each **zoom level**.    
+
+Web maps typically have around 20 zoom levels with zoom level 0 consisting of only 1 tile for the entire world (this zoom level loads the fastest!).
+
+Level 0 | Level 18
+--- | ---
+![tiles](http://a.tile.openstreetmap.org/0/0/0.png) | ![tiles](http://a.tile.openstreetmap.org/18/41325/89736.png) 
+1 Tile | 69 Billion Tiles
+
 ### Zoom Levels
 Because web maps refresh content as you zoom in, they don't have a traditional map scale. Instead, there are different levels associated with the amount of detail shown on the map.
 ### Tile Servers
