@@ -109,7 +109,7 @@ You might also be thinking: ***Can I customize my own tiles to make them look co
 Here are some interesting styles:    
 
 ![tiles](img/dark.png)  ![tiles](img/fire.png)  ![tiles](img/otd.png)
-![tiles](img/pio.png)  ![tiles](img/stm.png)  ![tiles](img/wtc.png)
+![tiles](img/pio.png)  ![tiles](img/stm.png)  ![tiles](img/wtc.jpg)
 
 
 
