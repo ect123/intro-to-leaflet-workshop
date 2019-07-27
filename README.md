@@ -106,7 +106,7 @@ You might be thinking: ***Where are all these tiles loading from?*** Well, there
 
 You might also be thinking: ***Can I customize my own tiles to make them look cool?*** You can, with services like [Mapbox Studio](https://www.mapbox.com/mapbox-studio/). Or you can [set up your own server](https://medium.com/@Nithanaroy/create-your-own-tile-server-and-map-client-5f7515fff28) to render your own. But these options are both way beyond the scope of this workshop, so for now, don't worry about it. There are several out-of-the-box options to make your map tiles look sleek.    
 
-Here are some interesting styles:    
+Here are some interesting styles for the tile covering the south part of UBC Campus at zoom level 13:    
 
 ![tiles](img/dark.png)  ![tiles](img/fire.png)  ![tiles](img/otd.png)
 ![tiles](img/pio.png)  ![tiles](img/stm.png)  ![tiles](img/wtc.jpg)
@@ -120,7 +120,7 @@ Vector tiles contain vector data like feature names and other attribute data. Wh
 
 
 ### Data (.shp ⇢ .geojson)
-Another moving part of a web map is the data added to it. While your map tiles are a necessary part of your map, they're really only there to provide reference to your data.    
+Another moving part of a web map is the data added to it. While your map tiles are a necessary part of your map, they're really only there to provide reference to your data. Your data sits on top of your basemap. We call this your "data layer", "map content" and sometimes your "map features". Most of the time, your data is vector data so you can click and interact with it, but you can also add raster data as well.      
 
 If you're a GIS user, you have encountered a Shapefile. Shapefiles are the industry standard file type for geographic vector data. If you've ever tried to share a Shapefile in the web, you've probably had some problems or the needed to transform your file into something else. Shapefiles are meant to be used in GIS and other software and weren't designed to be displayed in the web. [GeoJSON](https://geojson.org/) on the other hand, are geographic files which are meant for the web. They're "easy for humans to read, and easy for machines to read", meaning that they're a lightweight, simplified and format so your average web browser can use them, and they're also fairly easy to understand if you want to view and edit them in a code editor. Here's a GeoJSON point over UBC:
 
@@ -147,9 +147,11 @@ One other great thing about GeoJSON, is that becuase they are open-source and si
 
 **:heavy_check_mark: Click the edit layer button (above the trash can) to move the marker to a different position, then save.**
 
-**:heavy_check_mark: In the Table panel, edit the GsoJSON file's attributes, by changing the name of the location.**
+**:heavy_check_mark: In the Table panel, edit the GeoJSON file's attributes, by changing the name of the location.**
 
-### Style
+### Style 😎     
+The basic building blocks of the web -- HTML and CSS -- also play a role in the way your map looks. We'll be creating a static .html document to display our web map as a full page document. Alternatively, we could create a map for a specific web page oin this workshop, but will rely on the Leaflet's built-in CSS rules for styling. However, in the future you can always customize these settings to fit the style of your own website or page.    
+
 
 ### Interaction
 
