@@ -104,7 +104,14 @@ Here's the map tile grid for **zoom level 13 over Vancouver**:
 #### Tile Servers  
 You might be thinking: ***Where are all these tiles loading from?*** Well, there are services that render these tiles for consumption. The main two being Google and [OpenStreetMap](https://wiki.openstreetmap.org/wiki/Tile_servers), but there are many others.     
 
-You might also be thinking: ***Can I customize my own tiles to make them look cool?*** You can, with services like [Mapbox Studio](https://www.mapbox.com/mapbox-studio/). Or you can [set up your own server](https://medium.com/@Nithanaroy/create-your-own-tile-server-and-map-client-5f7515fff28) to render your own. But these options are both way beyond the scope of this workshop, so for now, don't worry about it. There are several out-of-the-box options to make your map tiles look sleek.
+You might also be thinking: ***Can I customize my own tiles to make them look cool?*** You can, with services like [Mapbox Studio](https://www.mapbox.com/mapbox-studio/). Or you can [set up your own server](https://medium.com/@Nithanaroy/create-your-own-tile-server-and-map-client-5f7515fff28) to render your own. But these options are both way beyond the scope of this workshop, so for now, don't worry about it. There are several out-of-the-box options to make your map tiles look sleek.    
+
+Here are some interesting styles:    
+
+![tiles](http://a.tile.openstreetmap.org/0/0/0.png) | ![tiles](http://a.tile.openstreetmap.org/0/0/0.png) | ![tiles](http://a.tile.openstreetmap.org/0/0/0.png)
+![tiles](http://a.tile.openstreetmap.org/0/0/0.png) | ![tiles](http://a.tile.openstreetmap.org/0/0/0.png) | ![tiles](http://a.tile.openstreetmap.org/0/0/0.png)
+![tiles](http://a.tile.openstreetmap.org/0/0/0.png) | ![tiles](http://a.tile.openstreetmap.org/18/41325/89736.png) | ![tiles](http://a.tile.openstreetmap.org/0/0/0.png)
+
 
 #### Raster and Vector Tiles    
 Another thing to understand about map tiles is that there are both raster and vector tiles. Raster tiles have been around longer, and so are a little simpler to tinker with when learning about and tinkering with web maps. This is why we're using raster tiles for this workshop. Features and attributes on raster tiles are static because they're just images, and there are other limitations on the way we can view and interact with them.    
@@ -143,6 +150,7 @@ One other great thing about GeoJSON, is that becuase they are open-source and si
 **:heavy_check_mark: In the Table panel, edit the GsoJSON file's attributes, by changing the name of the location.**
 
 ### Style
+
 ### Interaction
 
 # Workshop
