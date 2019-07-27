@@ -79,6 +79,7 @@ In any case, web maps are a canvas for visualizing and interacting with geograph
 Let's talk a little bit about what makes this map work. To do that, we'll dissect the main moving parts of a basic web map. These parts work in concert to make a functioning web map.
 ### Map Tiles
 Map tiles are squares of geographic data that are loaded to your frame of view whenever you zoom or pan your map. You've probably noticed them if you've had choppy internet connection and had to wait for data to load:    
+
 ![tiles](/img/tiles.gif)   
 ### Zoom Levels
 Because web maps refresh content as you zoom in, they don't have a traditional map scale. Instead, there are different levels associated with the amount of detail shown on the map.
