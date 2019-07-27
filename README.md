@@ -308,7 +308,7 @@ Leaflet gives us an easy way to add basic map features called **markers**, which
 var ubccampus = L.marker([49.260605, -123.245995]).addTo(mymap).bindPopup("Hi Mom!");
 
 ```    
-You should see something like this:    
+You should see something like this (click on the marker too!):    
 
 ![Map loads over the center of UBC with a marker!](/img/map04.png "Map loads over the center of UBC with a marker!")
 
