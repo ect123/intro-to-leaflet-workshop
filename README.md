@@ -286,10 +286,13 @@ var mymap = L.map('mapid').setView([49.260605, -123.245995], 11);
 ```
 
 ### Zoom Levels
-Your map currently loads at a zoom level which requires a user to zoom in immediately toward UBC. Ideally, if this map is meant to show information for UBC's campus, it would load as close to campus as possible, without different screen dimensions cutting off parts of the campus area. So we'll need to change the loading zoom level.
+Your map currently loads at a zoom level which requires a user to zoom in immediately toward UBC. Ideally, if this map is meant to show information for UBC's campus, it would load as close to campus as possible, but not so close that different screen dimensions cut off parts of the campus area. So we'll need to change the loading zoom level.
 
 Looking again at our <code>mymap</code> variable, the loading view is set at the coordinate pair over UBC, and at a zoom level of 11. In our case, the map best loads at zoom level 14.
 
+**:heavy_check_mark: Change your loading zoom level your map loads at zoom level 14.**    
+
+You should see this if you save and refresh your map:
 
 ![Map loads over the center of UBC!](/img/map03.png "Map loads over the center of UBC!")
 
