@@ -317,9 +317,9 @@ You should see something like this (click on the marker too!):
 ### GeoJSON
 GeoJSON are often more complex data than markers or shapes. But they can be added to your map similarly: by creating a new variable holding the values for the GeoJSON feature(s).    
 
-Let's add a GeoJSON that represents UBC Buildings. Luckily, UBC's Campus and Community Planning releases their data as GeoJSON with an open license. We can [find the data here](https://github.com/UBCGeodata). For this workshop, let's use this buildings variable made from the UBCGeodata repository.    
+Let's add a GeoJSON that represents UBC Buildings. Luckily, UBC's Campus and Community Planning releases their data as GeoJSON with an open license. We can [find the data here](https://github.com/UBCGeodata). For this workshop, let's use [this](https://github.com/ect123/intro-to-leaflet-workshop/blob/master/maps/ubcbuildings.js) buildings variable made from the UBCGeodata repository.    
 
-**:heavy_check_mark: Copy/paste the UBC building variable into the body of your HTML document.**
+**:heavy_check_mark: Copy/paste the [UBC building variable](https://github.com/ect123/intro-to-leaflet-workshop/blob/master/maps/ubcbuildings.js) into the body of your HTML document.**
 
 Then we need to add a Leaflet function to add this data to our map.    
 
