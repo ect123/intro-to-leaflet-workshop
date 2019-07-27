@@ -90,16 +90,15 @@ Level 0 | Level 18
 --- | ---
 ![tiles](http://a.tile.openstreetmap.org/0/0/0.png) | ![tiles](http://a.tile.openstreetmap.org/18/41325/89736.png)
 1 tile covers the world| 69 billion tiles cover the world    
-  
-Here's the map tile grid for **zoom level 11 over Vancouver**:    
+
+<--! Here's the map tile grid for **zoom level 11 over Vancouver**:    
 ![tiles](/img/vanzoom11.png)   
 
 Here's the map tile grid for **zoom level 13 over Vancouver**:    
 ![tiles](/img/vanzoom13.png)   
+-->
 
 
-### Zoom Levels
-Because web maps refresh content as you zoom in, they don't have a traditional map scale. Instead, there are different levels associated with the amount of detail shown on the map.
 ### Tile Servers
 ### Raster and Vector Tiles
 ### Data (.shp ⇢ .geojson)
