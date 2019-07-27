@@ -300,7 +300,7 @@ You should see this if you save and refresh your map:
 ## Adding Data
 Let's add some map features!!
 
-### Markers
+### Add a Marker
 Leaflet gives us an easy way to add basic map features called **markers**, which represent point locations on the ground. More information about adding basic features to Leaflet can be found in the [Leaflet Quick Start Guide](https://leafletjs.com/examples/quick-start/). Let's add a marker over UBC campus.    
 
 **:heavy_check_mark: Add a Leaflet marker by copy/pasting the text below into the body of your HTML document.<code>body</code>.**
@@ -314,14 +314,14 @@ You should see something like this (click on the marker too!):
 ![Map loads over the center of UBC with a marker!](/img/map04.png "Map loads over the center of UBC with a marker!")
 
 
-### GeoJSON
+### Add a GeoJSON
 GeoJSON are often more complex data than markers or shapes. But they can be added to your map similarly: by creating a new variable holding the values for the GeoJSON feature(s).    
 
 Let's add a GeoJSON that represents UBC Buildings. Luckily, UBC's Campus and Community Planning releases their data as GeoJSON with an open license. We can [find the data here](https://github.com/UBCGeodata). For this workshop, let's use [this](https://github.com/ect123/intro-to-leaflet-workshop/blob/master/maps/ubcbuildings.js) buildings variable made from the UBCGeodata repository.    
 
-**:heavy_check_mark: Copy/paste the [UBC building variable](https://github.com/ect123/intro-to-leaflet-workshop/blob/master/maps/ubcbuildings.js) into the body of your HTML document.**
+**:heavy_check_mark: Copy/paste the [UBC building variable](https://github.com/ect123/intro-to-leaflet-workshop/blob/master/maps/ubcbuildings.js) into the body of your HTML document, just after your <code>ubcbuildings</code> variable.**
 
-Then we need to add a Leaflet function to add this data to our map.    
+Then we need to include a Leaflet function so that our map loads this data.    
 
 **:heavy_check_mark: Add the buildings to your map by copy/pasting the function below into your HTML document.**    
 
@@ -329,8 +329,7 @@ Then we need to add a Leaflet function to add this data to our map.
 L.geoJSON(ubcbuildings).addTo(mymap);
 ```    
 
-
-
+You should see something like this after you save and reload your browser:    
 
 
 ![Map loads over the center of UBC with a marker, and a data layer!](/img/map05.png "Map loads over the center of UBC with a marker, and a data layer!")
