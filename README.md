@@ -70,12 +70,16 @@ More commonly, we use this term for "born digital" maps like this cycling map fr
 Using the definition above, a web map is a type of digital map since it is derived from a computer. However there are some important differences:
 - **Web may have dynamic scales and content**. For instance when you zoom in, more information may appear that wasn't apparent before. For this reason, web maps are not designed for print.
 - **Interactive**. This has been stated already, but web maps are built to be interacted with - usually by an end user.
-- **Often relies on web and mobile technology**.
+- **Often relies on web and mobile technology**.    
+We see web maps all the time in the web, and usually we think of [Google Maps](https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10414.983406806172!2d-123.24297379757083!3d49.26226286690077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1542068116121) as a familiar example. For small businesses, web maps are helpful for [finding directions](https://luppolobrewing.ca/contact/). For app builders, web maps might provide a [method for routing to locations](https://www.pogomap.info/) using a mobile device's geolocation features. For researchers, they may help [communicate important information](https://www.uvic.ca/research/centres/cisur/projects/map/index.php) in an area of study. For journalists, they may help [provide perspective on a story in the news](https://www.nytimes.com/interactive/2018/upshot/election-2016-voting-precinct-maps.html#4.04/39.97/-84.35).
 
+In any case, web maps are a canvas for visualizing and interacting with geographic data.
 
 ## Basic Structure
-Let's talk a little bit about what makes this map work. To do that, we'll dissect the
+Let's talk a little bit about what makes this map work. To do that, we'll dissect the main moving parts of a basic web map. These parts work in concert to make a functioning web map.
 ### Map Tiles
+Map tiles are squares of geographic data that are loaded to your frame of view whenever you zoom or pan your map. You've probably noticed them if you've had choppy internet connection and had to wait for data to load. You've probably seen them before:    
+![](https://ect123.s3.amazonaws.com/PNWDC-Leaflet-2018/img/tilespan.gif)   
 ### Zoom Levels
 Because web maps refresh content as you zoom in, they don't have a traditional map scale. Instead, there are different levels associated with the amount of detail shown on the map.
 ### Tile Servers
