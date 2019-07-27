@@ -248,11 +248,19 @@ If you copy either one of those links and paste it in a new tab in your browser,
 The <code>body</code> is the container for the what you see formatted in your browser. Here, you have an HTML container for your map, which is styled to be the height of a full page.     
 ```HTML   
 <div id="mapid" style="height: 100%;"></div>
+```    
+Also included in the <code>body</code> is a script that load the map to your page.    
+```JavaScript
+var mymap = L.map('mapid').setView([49.2827, -123.1207], 11);
+
+var Stamen_Terrain = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.{ext}', {
+      attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> — Map data © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+      subdomains: 'abcd',
+      minZoom: 0,
+      maxZoom: 18,
+      ext: 'png'
+        }).addTo(mymap);
 ```
-
-
-, including a name/id for the container, as well as a style attribute telling your browser to make this container as high as the page allows. Line 19-37 is the script for your map. This is what we’ll be editing today.
-#### Script
 in the script, on line 22 we have our map variable containing the initial starting point and zoom level. When someone opens this page, or refreshed their browser, this is what the map will show. Zoom levels are a digital map’s way of dealing with scale. In the paper world we have maps that are printed at different scales which show differing levels of detail. A paper map with a small scale has little detail, a map at a large scale has lots of detail. But with digital maps, we can just double-click our mouse to load more detail. There are up to 22 standard zoom levels, with zoom level 22 being the most detailed, and zoom level 0 being all the way zoomed out to see the entire world. We also have in lines 24-31 a tile layer variable. Your tile layer in this case is the basemap that we see when we are zooming and panning. What that is is a streaming set of georeferenced tiles that we are pulling in from some remote server. And we are defining that in these lines. There’s some other info in here too like attribution and a max min zoom level - this particular layer will only zoom into layer 18. And then it stops.
 ## Configure the Starting View
 Ok so we have our map boilerplate, and its a good starting point for making a map of ubc. One thing that we’ll notice is that when the map loads, it’s just starting over vancouver, and not UBC. So, let’s change that.
