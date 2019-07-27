@@ -84,12 +84,17 @@ Map tiles are squares of geographic data that are loaded to your frame of view w
 
 Every time you pan your map, new tiles are loaded to fill that frame of view. The tiles outside of that view are not loaded because loading the entire world's tiles would be time consuming, especially if you were just focused on a small area. When you zoom in or out, new tiles are loaded to correspond with the level of detail needed at each **zoom level**.    
 
-Web maps typically have around 20 zoom levels with zoom level 0 consisting of only 1 tile for the entire world (this zoom level loads the fastest!).    
+Web maps typically have around 20 zoom levels. Zoom level 0 has the least amount of detail, and is from a viewpoint as far away as earth as it gets. As the zoom level number goes up, so does the detail. Zoom level 18 has enough detail that displaying building titles makes sense. Zoom level 0 consisting of only 1 tile for the entire world (this zoom level loads the fastest!). Zoom level 18 consists of around 69 billion tiles. That's a lot of data!!!!    
 
 Level 0 | Level 18
 --- | ---
 ![tiles](http://a.tile.openstreetmap.org/0/0/0.png) | ![tiles](http://a.tile.openstreetmap.org/18/41325/89736.png)
-1 tile covers the world| 69 billion tiles cover the world   
+1 tile covers the world| 69 billion tiles cover the world     
+Here's the map tile grid for **zoom level 11 over Vancouver**:    
+![tiles](/img/vanzoom11.png)   
+
+Here's the map tile grid for **zoom level 13 over Vancouver**:    
+![tiles](/img/vanzoom13.png)   
 
 
 ### Zoom Levels
