@@ -240,8 +240,8 @@ The stuff inside the <code>head</code> is the metadata for your browser about th
 
 ```html
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
-``` 
+<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
+```
 
 are links to the source for leaflet - including the js library as well as the style sheet (the .css) that defines how elements of this map will look. And on line 11 is the same link to jQuery. If you copy the link to the leaflet js and paste it in a new tab in your browser, you’ll see the raw javascript code. If you wanted to, you could just add that to this page, but we don’t need to.
 #### Body
