@@ -229,7 +229,7 @@ You should see a map that looks something like this:
 
 
 ### In a Source Code Editor
-Let's look at what is making this file work using our code editor. The HTML document is split into two main sections: (1) the <code>head</code> and the (2) <code><body></code> Each of these sections are contained in opening and closing tags. Inside the head is the metadata that your browser is given about the document. And the body is the container for the document.
+Let's look at what is making this file work using our code editor. The HTML document is split into two main sections: (1) the <code>head</code> and the (2) <code>body</code>. Each of these sections are contained in opening <pre><head></pre> and closing tags. Inside the head is the metadata that your browser is given about the document. And the body is the container for the document.
 #### Head
 inside the head are things like on line 4, the metadata field for the document’s title. Your title is displayed in your browser tab. Lines 8-9 are links to the source for leaflet - including the js library as well as the style sheet (the .css) that defines how elements of this map will look. And on line 11 is the same link to jQuery. If you copy the link to the leaflet js and paste it in a new tab in your browser, you’ll see the raw javascript code. If you wanted to, you could just add that to this page, but we don’t need to.
 #### Body
