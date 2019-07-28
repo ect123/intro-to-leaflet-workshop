@@ -41,13 +41,10 @@ Take a look at this basic [Leaflet map example](https://ect123.s3.amazonaws.com/
 
 ## Web Map ≠ Digital Map
 While we're talking about maps loading and working in the web, let's also talk the difference between a **web map** and a **digital map**. The term digital map is used quite often. As a benchmark, Wikipedia's entry for "Digital Mapping" is:
-
-
-and it may not refer to anything specific. Rather it's more a catch-all term that refers
-
+> The process by which a collection of data is compiled and formatted into a virtual image.    
 
 ### Digital Maps
-A digital map is a map that was somehow derived from a computer. Sometimes we use this term to refer to scanned paper maps since they've been digitally reformatted like this old map of Vancouver:
+More specifically to our workshop, a digital map is a map that was somehow derived from a computer. Sometimes we use this term to refer to scanned paper maps since they've been digitally reformatted like this old map of Vancouver:
 
 ![Digital surrogate of a historical map of Vancouver](/img/commonwealth_4m90fg11z_access800.jpg "Map reproduction courtesy of the Norman B. Leventhal Map & Education Center at the Boston Public Library")    
 <sub><sup>[Map reproduction courtesy of the Norman B. Leventhal Map & Education Center at the Boston Public Library](https://collections.leventhalmap.org/search/commonwealth:4m90fg11z)</sup></sub>     
