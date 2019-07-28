@@ -346,7 +346,7 @@ var Stamen_TonerLite = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/to
 	minZoom: 0,
 	maxZoom: 20,
 	ext: 'png'
-})addTo(mymap);
+}).addTo(mymap);
 ```    
 
 If it all went as planned, you should see a map like this in your browser:    
