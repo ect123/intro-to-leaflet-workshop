@@ -1,0 +1,42 @@
+<html>
+  <head>
+
+    <title>Leaflet</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Source for your Leaflet JavaScript and CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
+
+  </head>
+
+  <body>
+    <!-- Your map's HTML container -->
+    <div id="mapid" style="height: 100%;"></div>
+
+    <!-- Script for your map between <script> and </script> -->
+    <script>
+
+      // Initialize your map, sets the initial view location and zoom level
+      var mymap = L.map('mapid').setView([49.2827, -123.1207], 11);
+
+      //Load the tile layer, paste in new tile layer of choice.
+      var Stamen_Terrain = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.{ext}', {
+      attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> — Map data © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+      subdomains: 'abcd',
+      minZoom: 0,
+      maxZoom: 18,
+      ext: 'png'
+        }).addTo(mymap);
+
+      //Paste your marker here
+
+      //Paste UBC buildings variable here
+      //Paste the L.geoJSON function here
+
+      //Paste popup function here
+
+    </script>
+  </body>
+</html>
