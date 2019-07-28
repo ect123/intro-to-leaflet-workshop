@@ -68,7 +68,7 @@ More commonly, we use this term for "born digital" maps like this cycling map fr
 
 ### Web Maps
 Using the definition above, a web map is a type of digital map since it is derived from a computer. However there are some important differences:
-- **Web may have dynamic scales and content**. For instance when you zoom in, more information may appear that wasn't apparent before. For this reason, web maps are not designed for print.
+- **Web maps have dynamic scales and content**. For instance when you zoom in, more information may appear that wasn't apparent before. For this reason, web maps are not designed for print.
 - **Interactive**. This has been stated already, but web maps are built to be interacted with - usually by an end user.
 - **Often relies on web and mobile technology**.    
 We see web maps all the time in the web, and usually we think of [Google Maps](https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10414.983406806172!2d-123.24297379757083!3d49.26226286690077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1542068116121) as a familiar example. For small businesses, web maps are helpful for [finding directions](https://luppolobrewing.ca/contact/). For app builders, web maps might provide a [method for routing to locations](https://www.pogomap.info/) using a mobile device's geolocation features. For researchers, they may help [communicate important information](https://www.uvic.ca/research/centres/cisur/projects/map/index.php) in an area of study. For journalists, they may help [provide perspective on a story in the news](https://www.nytimes.com/interactive/2018/upshot/election-2016-voting-precinct-maps.html#4.04/39.97/-84.35).
@@ -319,11 +319,11 @@ GeoJSON are often more complex data than markers or shapes. But they can be adde
 
 Let's add a GeoJSON that represents UBC Buildings. Luckily, UBC's Campus and Community Planning releases their data as GeoJSON with an open license. We can [find the data here](https://github.com/UBCGeodata). For this workshop, let's use [this](https://github.com/ect123/intro-to-leaflet-workshop/blob/master/maps/ubcbuildings.js) buildings variable made from the UBCGeodata repository.    
 
-**:heavy_check_mark: Copy/paste the [UBC building variable](https://github.com/ect123/intro-to-leaflet-workshop/blob/master/maps/ubcbuildings.js) into the body of your HTML document, just after your <code>ubcbuildings</code> variable.**
+**:heavy_check_mark: Copy/paste the [UBC building variable](https://github.com/ect123/intro-to-leaflet-workshop/blob/master/maps/ubcbuildings.js) into the body of your HTML document.**
 
 Then we need to include a Leaflet function so that our map loads this data.    
 
-**:heavy_check_mark: Add the buildings to your map by copy/pasting the function below into your HTML document.**    
+**:heavy_check_mark: Add the buildings to your map by copy/pasting the function below into your HTML document, just after your <code>ubcbuildings</code> variable.**    
 
 ```JavaScript
 L.geoJSON(ubcbuildings).addTo(mymap);
@@ -378,7 +378,7 @@ If all went as planned you should see this in your browser:
 
 
 ## What's Next?    
-You are not required to think about web maps ever again, but if this workshop has inspired you to expand your skills, try making another map on your own using data for a different location on your own. This will give you some clarity around where you might have some gaps in understanding. There are some additional clean .geojsons included here to practice. Remember, you can also create your own .geojson with free tools like [geojson.io](http://geojson.io).
+You are not required to think about web maps ever again, but if this workshop has inspired you to expand your skills, try making another map on your own using data for a different location on your own. This will give you some clarity around where you might have some gaps in understanding. Remember, you can create your own GeoJSON with free tools like [geojson.io](http://geojson.io).
 
 ***Keep in mind that not all data will be nicely packaged and cleaned. In fact, it never is. If you proceed to use data that you've found on the web, be prepared to spend time preparing your data to be usable with Leaflet and the web.***
 
