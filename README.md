@@ -306,7 +306,7 @@ You should see something like this (click on the marker too!):
 ### Add a GeoJSON
 GeoJSON are often more complex data than markers or shapes. But they can be added to your map similarly: by creating a new variable holding the values for the GeoJSON feature(s).    
 
-Let's add a GeoJSON that represents UBC Buildings. Luckily, UBC's Campus and Community Planning releases their data as GeoJSON with an open license. We can [find the data here](https://github.com/UBCGeodata). For this workshop, let's use [this](https://github.com/ect123/intro-to-leaflet-workshop/blob/master/maps/ubcbuildings.js) buildings variable made from the UBCGeodata repository.    
+Let's add a GeoJSON that represents UBC Buildings. Luckily, UBCs Campus and Community Planning releases their data as GeoJSON with an open license. We can [find the data here](https://github.com/UBCGeodata). For this workshop, let's use [this](https://github.com/ect123/intro-to-leaflet-workshop/blob/master/maps/ubcbuildings.js) buildings variable made from the UBCGeodata repository.    
 
 **:heavy_check_mark: Copy/paste the [UBC building variable](https://github.com/ect123/intro-to-leaflet-workshop/blob/master/maps/ubcbuildings.js) into the body of your HTML document.**
 
@@ -378,6 +378,9 @@ Web map basics: [Anatomy of a Web Map - Alan McConchie and Beth Schechter](http:
 Leaflet basics: [Leaflet Quick Start Guide](https://leafletjs.com/examples/quick-start/)   
 Web map functionality examples: [Mapbox.js Examples](https://docs.mapbox.com/mapbox.js/example/v1.0.0/)    
 GeoJSON: [More than you ever wanted to know about GeoJSON - Tom MacWright](https://macwright.org/2015/03/23/geojson-second-bite.html)    
+Mapbox.com: [Evan's brief overview of Mapbox](https://github.com/ect123/mapbox-overview)    
 
+<!--
 ### License
 [![CC0](https://i.creativecommons.org/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
+
