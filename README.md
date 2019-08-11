@@ -380,7 +380,7 @@ Web map functionality examples: [Mapbox.js Examples](https://docs.mapbox.com/map
 GeoJSON: [More than you ever wanted to know about GeoJSON - Tom MacWright](https://macwright.org/2015/03/23/geojson-second-bite.html)    
 Mapbox.com: [Evan's brief overview of Mapbox](https://github.com/ect123/mapbox-overview)    
 
-
+<!--
 ### License
 [![CC0](https://i.creativecommons.org/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
-
+-->
