@@ -25,7 +25,9 @@ Making maps is hard. And without practice, working in the web is hard too. While
 - **Understanding of basic cartographic design concepts**. What is map making without a consideration of cartography? Axis Maps has written a phenomenal [short guide to cartography](https://www.axismaps.com/guide/), and [the web map module](https://www.axismaps.com/guide/web/should-a-map-be-interactive/) is especially relevant.
 
 ### Workshop Data
-All of the data you'll need for this workshop is included in this repository. You can simply copy/paste the text from here to your local computer without downloading. However, if you'd like to download the whole package to repurpose, click on the green download link, then download the ZIP:
+All of the data you'll need for this workshop is included in this repository. To get started you'll need to download and save it to your local machine. As we go through the hands-on part,  you can simply copy/paste the text from this page to the files on your local machine.
+
+**:heavy_check_mark: Click on the green download link, then download the ZIP:**
 
 ![Download](/img/download.png "Download")
 
@@ -34,7 +36,7 @@ Let's get started!
 
 So, what exactly is Leaflet? Leaflet is a set of instructions that your web browser or mobile device uses to display maps and let you interact with them. So like when you double click a mouse on a map, leaflet tells your browser to zoom in. Leaflet defines the style of your map - and includes things like zoom controls, attribution links, colors for markers on top of the map, etc. It is made up of only 38kb of Javascript, so it is really fast and lightweight - meaning browsers don’t have to work very hard to load it. It is open source, free, and hugely customizable. And because of all of that it is really widely used. There are lots of alternative to Leaflet, but I think the one that is most widely used is Google Maps, which you need an API key to use.
 ### As Code
-Technically speaking, Leaflet consists of JavaScript and CSS code libraries which power the ways your web browser interprets and interacts with geospatial data, displays colors and style. For instance, when you double click a map to zoom in, Leaflet is at work. When you add data to your map, Leaflet assigns it a default color. And because Leaflet is open-source, the code is hugely customizable and extensible. [Here are some examples](https://leafletjs.com/plugins.html) of Leaflet-based plugins to give you some idea of the variety of added functionality that comes from the community of developers.
+Technically, Leaflet consists of JavaScript and CSS code libraries which power the ways your web browser interprets and interacts with geospatial data, displays colors and style. For instance, when you double click a map to zoom in, Leaflet is at work. When you add data to your map, Leaflet assigns it a default color. And because Leaflet is open-source, the code is hugely customizable and extensible. [Here are some examples](https://leafletjs.com/plugins.html) of Leaflet-based plugins to give you some idea of the variety of added functionality that comes from the community of developers.
 
 ### In a Browser
 Take a look at this basic [Leaflet map example](https://ect123.s3.amazonaws.com/map01.html). You can zoom in, pan around, etc. It's meant to be displayed in your internet browser or a mobile application, so it loads and responds to you quickly.  
@@ -169,7 +171,7 @@ Below is a bunch of code - this is our map boilerplate. We need to cut this and 
     <!-- Source for your Leaflet JavaScript and CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin=""/>
     <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
-
+    <script src="./ubcbuildings.js" charset="utf-8"></script>
   </head>
 
   <body>
@@ -234,6 +236,13 @@ The stuff inside the <code>head</code> is the metadata for your browser about th
 ```
 
 If you copy either one of those links and paste it in a new tab in your browser, you’ll see a lot of raw code. By linking to the source, we avoid having to carry this text into our own document, while also being assured that the code we're using is up-to-date.
+
+You'll also see a link to something called <code>ubcbuildings.js</code>.
+```HTML
+<script src="./ubcbuildings.js" charset="utf-8"></script>
+```
+This is a [relative path](https://www.w3schools.com/html/html_filepaths.asp) to a file that we will add to our map later on in the workshop. For now, all you have to know that this file is included in the .ZIP package that you downloaded to start, and not a link to an external web resource.
+
 #### Body
 The <code>body</code> is the container for the what you see formatted in your browser. Here, you have an HTML container for your map, which is styled to be the height of a full page.     
 ```HTML   
@@ -306,13 +315,9 @@ You should see something like this (click on the marker too!):
 ### Add a GeoJSON
 GeoJSON are often more complex data than markers or shapes. But they can be added to your map similarly: by creating a new variable holding the values for the GeoJSON feature(s).    
 
-Let's add a GeoJSON that represents UBC Buildings. Luckily, UBCs Campus and Community Planning releases their data as GeoJSON with an open license. We can [find the data here](https://github.com/UBCGeodata). For this workshop, let's use [this](https://github.com/ect123/intro-to-leaflet-workshop/blob/master/maps/ubcbuildings.js) buildings variable made from the UBCGeodata repository.    
+Let's add a GeoJSON that represents UBC Buildings. Luckily, UBCs Campus and Community Planning releases their data as GeoJSON with an open license. We can [find the data here](https://github.com/UBCGeodata). For this workshop, the buildings variable has already been created and we downloaded it as a separate file when we started. The variable's name <code>ubcbuildings</code>. To add it to our map, we'll need to include a Leaflet function so that our map loads this data when initialized:       
 
-**:heavy_check_mark: Copy/paste the [UBC building variable](https://github.com/ect123/intro-to-leaflet-workshop/blob/master/maps/ubcbuildings.js) into the body of your HTML document.**
-
-Then we need to include a Leaflet function so that our map loads this data.    
-
-**:heavy_check_mark: Add the buildings to your map by copy/pasting the function below into your HTML document, just after your <code>ubcbuildings</code> variable.**    
+**:heavy_check_mark: Add the buildings to your map by copy/pasting the function below into your HTML document, just below the Marker.**    
 
 ```JavaScript
 L.geoJSON(ubcbuildings).addTo(mymap);
