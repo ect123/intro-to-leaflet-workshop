@@ -157,8 +157,8 @@ Before we start working on our map, let's just put things into perspective. This
 We'll use two pieces of software - a web browser, which will render/display your map, and a source code editor to edit that map.
 ### Development Environment
 First things first, let's set up your development environment which includes the two pieces of software, and a method for you to access them both efficiently. One option is to split your screen in half - web browser on one side and the code editor on another. Or you can move from one application tab to another by minimizing windows. It's totally your call, and the point is to find out what works best for you.
-## Create and Open Your Map Boilerplate
-Below is a bunch of code - this is our map boilerplate. We need to cut this and paste this to a new file into your source code editor. It’s important that you don’t lose any of this text, and that it remains in its original structure and arrangement.
+## Open Your Map Boilerplate
+Below is a bunch of code - this is our map boilerplate. This was included in the .ZIP file that was downloaded at the start of this workshop, and now we need to open in in our source code editor. It’s important that you don’t lose any of this text, and that it remains in its original structure and arrangement.
 
 ```HTML
 <html>
@@ -205,17 +205,11 @@ Below is a bunch of code - this is our map boilerplate. We need to cut this and 
 </html>
 
 ```
-**:heavy_check_mark: Copy the text above and paste it into a blank document in your code editor.**     
-
-**:heavy_check_mark: Save the file to you computer and name it *ubc-buildings.html*.**
-
+**:heavy_check_mark: Navigate into the "maps" folder and open the <code>boilerplate.html</code> in your web browser.**  You may need to "right-click" and "open with" your browser of choice.
 
 ### In a Browser
-Once you have your HTML file saved, open it in a new tab or browser window.    
 
-**:heavy_check_mark: Right-click the .html file you just saved, and open with Google Chrome or Mozilla Firefox.**    
-
-You should see a map that looks something like this:
+In your web browser, you should see a map that looks something like this:
 
 ![Map loads over the center of Vancouver](/img/map01.png "Your first map loads over Vancouver")
 
@@ -301,7 +295,7 @@ Let's add some map features!!
 ### Add a Marker
 Leaflet gives us an easy way to add basic map features called **markers**, which represent point locations on the ground. More information about adding basic features to Leaflet can be found in the [Leaflet Quick Start Guide](https://leafletjs.com/examples/quick-start/). Let's add a marker over UBC campus.    
 
-**:heavy_check_mark: Add a Leaflet marker by copy/pasting the text below into the body of your HTML document.<code>body</code>.**
+**:heavy_check_mark: Add a Leaflet marker by copy/pasting the text below into the <code>body</code> of your HTML document.**
 
 ```JavaScript
 var ubccampus = L.marker([49.260605, -123.245995]).addTo(mymap).bindPopup("Hi Mom!");
